@@ -1,0 +1,29 @@
+{
+  "milestone": "bounded stale-negative status",
+  "created_at": "2026-10-21T23:47:47.636002+00:00",
+  "prediction_sha256": "99b032e21da45a53e4b3d2fc83af30682296efc5ab83a8a57833488e83dd47a6",
+  "baseline_unchanged": true,
+  "tests_passed": 22,
+  "files_sha256": {
+    "LICENSE": "678e9c615789dd91c998713a40189f34c0511bd8e2088440048f9e91c5ff76d8",
+    "PREDICTIONS.md": "99b032e21da45a53e4b3d2fc83af30682296efc5ab83a8a57833488e83dd47a6",
+    "PREDICTIONS.sha256": "6641c64d659cbccb3816b85557f4fa3e19ba7cc94b6ef3b53f364eee741902b0",
+    "README.md": "a2b594de630e129f35e1c7ae4067c408eaf07b7b8572c33d526f4ee054ed708b",
+    "baseline/config.json": "77c47c32924d5aea02681b85af29c8cbb724e6506245f65a7482d67a7de4f1f0",
+    "baseline/results/experiment.json": "f2a38bf09dff5a1e99580656877fbed08037f6fbfe551690a5fc8b29c4b5d33f",
+    "baseline/run_experiment.py": "7b0a6b6c205b4d47bab6d4bec2d3316758a3660d017e7a036f8a4f984973e5af",
+    "baseline/tests/test_workflow.py": "7c46d381f8e702a24af0f34c30af237c58a91a0aed13ca73f0e6c8828085547a",
+    "baseline/workflow.py": "3abf0678b5896ed9657f162cdaf6afb557e18499aec87f3a645c059af90208b5",
+    "baseline_hashes_before.json": "e1080d921d343528c55d765579c574d134cacfcd489046b93d48e7716e2da335",
+    "config.json": "d1efc32376057180af5ee8f0d12eb04970705b40b7a386119dea0900fa827cb9",
+    "results/baseline_integrity.json": "036a25f9d761d13a15fc2dc7125b6638820d989241619409b1090b0b74bb7883",
+    "results/experiment.json": "dfcbcd1163f4118f91534316b9e5f1b30f64d6d146bce7f49f3b5f28ec1e4037",
+    "results/per_cell.csv": "e6f384aeb9f28a9d4e4314592a3a9d0088e2150f191266793d37110384282d1b",
+    "results/rows.csv": "a947814882101209923627d97edaf16c35834b04477ce52aad7612c714f1a11b",
+    "results/tests.txt": "ff0ad777a6d2f6f0328b64026fe758c7fe740ce36f43b7f96f6b42912d1c5abc",
+    "run_experiment.py": "4b2af8a072b031648c19a68fb64cfed1c68b0efc19da075defab9b23a22c3cde",
+    "tests/test_baseline.py": "7c46d381f8e702a24af0f34c30af237c58a91a0aed13ca73f0e6c8828085547a",
+    "tests/test_staleness.py": "227a1c9d39ef5ebd5e44b238f623c30b2154564cca853e0ac41a7e3503580eae",
+    "workflow.py": "fc5b1d9ab5db7f42854bec9e510cebe9905ad986aa4fae14dbeabe9b0cfda1c4"
+  }
+}

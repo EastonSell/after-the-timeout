@@ -1,0 +1,27 @@
+test_blind_duplicates (test_baseline.RecoveryTests.test_blind_duplicates) ... ok
+test_cursor_loop (test_baseline.RecoveryTests.test_cursor_loop) ... ok
+test_denial_terminal (test_baseline.RecoveryTests.test_denial_terminal) ... ok
+test_distinct_operation_ids (test_baseline.RecoveryTests.test_distinct_operation_ids) ... ok
+test_empty_page_with_cursor (test_baseline.RecoveryTests.test_empty_page_with_cursor) ... ok
+test_idempotency (test_baseline.RecoveryTests.test_idempotency) ... ok
+test_timeout_after_inspect (test_baseline.RecoveryTests.test_timeout_after_inspect) ... ok
+test_timeout_before (test_baseline.RecoveryTests.test_timeout_before) ... ok
+test_unknown_fault (test_baseline.RecoveryTests.test_unknown_fault) ... ok
+test_unknown_stops (test_baseline.RecoveryTests.test_unknown_stops) ... ok
+test_all_cell_counts_and_totals (test_staleness.StalenessTests.test_all_cell_counts_and_totals) ... ok
+test_budget_is_operation_scoped (test_staleness.StalenessTests.test_budget_is_operation_scoped) ... ok
+test_fresh_immediately (test_staleness.StalenessTests.test_fresh_immediately) ... ok
+test_invalid_staleness (test_staleness.StalenessTests.test_invalid_staleness) ... ok
+test_only_after_fault_arms_staleness (test_staleness.StalenessTests.test_only_after_fault_arms_staleness) ... ok
+test_rows_match_published_baseline (test_staleness.StalenessTests.test_rows_match_published_baseline) ... ok
+test_seeds_change_order_not_cell_outcomes (test_staleness.StalenessTests.test_seeds_change_order_not_cell_outcomes) ... ok
+test_stale_inspection_duplicates_without_idempotency (test_staleness.StalenessTests.test_stale_inspection_duplicates_without_idempotency) ... ok
+test_stale_inspection_idempotent_retry (test_staleness.StalenessTests.test_stale_inspection_idempotent_retry) ... ok
+test_stale_then_fresh (test_staleness.StalenessTests.test_stale_then_fresh) ... ok
+test_unsupported_status_preserves_budget (test_staleness.StalenessTests.test_unsupported_status_preserves_budget) ... ok
+test_zero_matches_original_every_cell (test_staleness.StalenessTests.test_zero_matches_original_every_cell) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.010s
+
+OK
