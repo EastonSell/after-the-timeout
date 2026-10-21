@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "path": "milestones/interface-handoff/CASE.md",
+      "sha256": "cd08e8b5181448bf569f15d607b8e6378e0eca40dcefc1b625ecf716be30cfb6",
+      "bytes": 1816
+    },
+    {
+      "path": "milestones/interface-handoff/skills/verify-repository-publication/SKILL.md",
+      "sha256": "4cf739e745dd1b46a11ff4f48a5335c18b419cd1afa2fba422b7758ba5f52445",
+      "bytes": 1617
+    }
+  ],
+  "evidence": "one observed publication workflow, original skill format validation; independent forward-testing pending"
+}

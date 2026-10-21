@@ -1,0 +1,7 @@
+# Completed research milestones
+
+1. [Deterministic recovery benchmark and public capability atlas](README.md): sixteen unique scenarios in three seed orders. Blind retry produced six duplicate commits; inspect-first produced none while leaving six outcomes unresolved and using more calls. This is a counterexample corpus, not a measured production failure rate.
+2. [Public-interface publication handoff case](milestones/interface-handoff/CASE.md): one observed cross-interface workflow, with an [original verification skill](milestones/interface-handoff/skills/verify-repository-publication/SKILL.md). It is not a comparative benchmark or proof that another account exposes the same capabilities.
+3. [Plainspoken-writing fixtures](skills/plainspoken-writing/): original qualitative editing examples, not independent model-evaluation results.
+
+All experiments and skills are original MIT-licensed work grounded in linked public interfaces. No private tool inventory or proprietary instruction text is included. Skill format validation and simulator tests are distinct from independent model forward-testing, which remains pending. Repository publication evidence must distinguish byte-exact source verification, clean-checkout reproduction and hosted CI; one does not establish the others.
