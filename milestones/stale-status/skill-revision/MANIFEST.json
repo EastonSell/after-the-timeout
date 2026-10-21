@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-21T23:51:30.423271+00:00",
+  "structural_validation": "Skill is valid!",
+  "regression_examples": 16,
+  "model_forward_tested": false,
+  "published_baseline_unchanged": true,
+  "stale_status_milestone_unchanged": true,
+  "original_skill_sha256": "0c40e39dcf492d3ac3f3f9e73f38f81e09e1443b1b248aac299fb0ff2935621d",
+  "files_sha256": {
+    "REVISION.md": "f979ddb90b5bc49500a99081581d08f7fec11a520089c1361758367a6546a39a",
+    "recover-uncertain-operation/SKILL.md": "5b570e5690c4af1ff8c4d4d71bcd23e24d5798c40daf230d48e6a7ed7f28ade1",
+    "recover-uncertain-operation/references/regression-examples.md": "a001595beb42dfffad6656a3b9f360f4fabbc9afa301f7f6931f0ff7c2fab1e2",
+    "recover-uncertain-operation/references/sources.md": "f2ae4bc2c462e877dc558ad3c54ae919d6f7f9bcc10faf15ec7e5aac2ab29e4a"
+  }
+}
