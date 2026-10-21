@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plainspoken Writing"
+  short_description: "Natural replies that preserve the full task scope"
+  default_prompt: "Use $plainspoken-writing to revise this reply while preserving its meaning and scope."
