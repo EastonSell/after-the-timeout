@@ -7,3 +7,5 @@
 All experiments and skills are original MIT-licensed work grounded in linked public interfaces. No private tool inventory or proprietary instruction text is included. Skill format validation and simulator tests are distinct from independent model forward-testing, which remains pending. Repository publication evidence must distinguish byte-exact source verification, clean-checkout reproduction and hosted CI; one does not establish the others.
 
 3. [Stale-status follow-on](milestones/stale-status/README.md): a single stale status read increased inspect-first duplicate commits from 0 to 3, with per-cell reporting and 22 tests. [Freshness-aware recovery skill revision](milestones/stale-status/skill-revision/REVISION.md) records the resulting guidance and synthetic review cases.
+
+4. [Idempotency key-lifetime follow-on](milestones/key-lifetime/README.md): 216 unique deterministic cells show that expiry restores duplicates despite reusing a key. A conservative lifetime guard produced zero extra commits but left 10 outcomes unresolved; 11 new regression tests and pre-run predictions accompany per-cell results.

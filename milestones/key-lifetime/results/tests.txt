@@ -1,0 +1,16 @@
+test_before_at_after_boundary (test_key_lifetime.KeyLifetimeTests.test_before_at_after_boundary) ... ok
+test_before_timeout_does_not_cache (test_key_lifetime.KeyLifetimeTests.test_before_timeout_does_not_cache) ... ok
+test_cache_hit_does_not_renew (test_key_lifetime.KeyLifetimeTests.test_cache_hit_does_not_renew) ... ok
+test_expiry_does_not_erase_commit_history (test_key_lifetime.KeyLifetimeTests.test_expiry_does_not_erase_commit_history) ... ok
+test_full_grid_independent_cell_oracle (test_key_lifetime.KeyLifetimeTests.test_full_grid_independent_cell_oracle) ... ok
+test_guard_cannot_use_hidden_state (test_key_lifetime.KeyLifetimeTests.test_guard_cannot_use_hidden_state) ... ok
+test_invalid_values_fail_before_effects (test_key_lifetime.KeyLifetimeTests.test_invalid_values_fail_before_effects) ... ok
+test_keys_are_operation_scoped (test_key_lifetime.KeyLifetimeTests.test_keys_are_operation_scoped) ... ok
+test_positive_status_resolves_after_expiry (test_key_lifetime.KeyLifetimeTests.test_positive_status_resolves_after_expiry) ... ok
+test_unlimited_matches_published_model (test_key_lifetime.KeyLifetimeTests.test_unlimited_matches_published_model) ... ok
+test_zero_lifetime_has_no_retention (test_key_lifetime.KeyLifetimeTests.test_zero_lifetime_has_no_retention) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK
