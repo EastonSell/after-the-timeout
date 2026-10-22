@@ -8,13 +8,22 @@ See [public capability catalog](docs/public-capabilities.md) and [research roadm
 Python 3.10+ standard library only. No downloads, credentials or remote execution.
 
 ```sh
-python -m unittest discover -s tests -v
-python run_experiment.py
+python tools/run_all_tests.py
+python tools/reproduce.py --study baseline --out ../atlas-baseline-run-001
 ```
 
-Ten tests cover committed and uncommitted timeouts, idempotency, unsupported status, terminal denial, an empty page with continuation, and a cursor loop. The deterministic corpus has 16 unique scenarios, run in three seeded orders for 48 trials per policy. Repeated seed orders do not create independent statistical evidence.
+The aggregate runner executes all seven maintained suites in separate interpreters,
+including 84 existing tests and eight release-tool tests (92 total). It continues
+through failing suites and exits nonzero if any suite fails. See the full
+[test matrix and safe reproduction guide](docs/reproduction.md). The output path
+above must be new, outside this repository, with an existing parent. The wrapper
+runs unchanged study sources in a temporary copy and never overwrites historical
+results. Do not directly rerun legacy run_experiment.py entry points against the
+source checkout: those preserved scripts overwrite their historical outputs.
 
-## Result
+The original ten baseline tests cover committed and uncommitted timeouts, idempotency, unsupported status, terminal denial, an empty page with continuation, and a cursor loop. The deterministic corpus has 16 unique scenarios, run in three seeded orders for 48 trials per policy. Repeated seed orders do not create independent statistical evidence.
+
+## Baseline result
 In the checked-in run, blind retry produced 6 duplicate commits; inspect-first produced 0, at 84 rather than 72 total calls. Inspect-first left 6 outcomes explicitly unresolved because neither status nor idempotency provided safe recovery. That is intentional incompleteness, not an unqualified success. In those cases the environment's actual hidden state and the agent's justified knowledge differ. Denials stopped after one call.
 
 The corpus assumes a reliable immediate status response when that capability exists, and correctly implemented idempotency when enabled. Real services can violate these assumptions through eventual consistency, partial commits, expired keys, conflicting payloads, or status lookup failure. Thus the result is an executable counterexample to blind retries, not a proof of safe production behavior or an estimated real-world failure rate. It measures calls, not tokens, wall-clock latency, or agent intelligence.
@@ -42,11 +51,24 @@ These are abstract public contracts. No named private tools, authenticated inven
 
 Sources checked October 21, 2026. No claim of exhaustive coverage or research novelty.
 
-## Next experiments
-Add stale status, partial commits and expiring idempotency keys; compare capped backoff policies under a published stochastic fault model; measure success, duplicate cost, unresolved rate and wall-clock cost separately. Then independently forward-test the skill using only sanitized fake services. Extend the atlas only with public interfaces and reproducible examples. Live mutations require separate authorization.
+## Completed follow-ons and next work
+- [Stale status](milestones/stale-status/README.md): one stale read can defeat inspect-first recovery.
+- [Key lifetime](milestones/key-lifetime/README.md): expired idempotency keys restore duplicate risk.
+- [Late original commits](milestones/late-commit/README.md): two lifetime-guard duplicates occur after the policy returns success.
+- [Durable checkpoint handoffs](milestones/checkpoint-handoff/README.md): local evidence validation without treating receipts as permission.
+- [Held-out handoff review](milestones/handoff-review/results/REPORT.md): one tool-assisted reviewer matched 48 predeclared written fields across eight fictional cases. This is not randomized efficacy or actual approval-compliance evidence.
+
+Still future: partial commits, admission-time reservations, controlled recovery-skill
+comparisons, and realistic latency/fault models. Separate completion, duplicate cost,
+unresolved rate and wall-clock cost. Extend the atlas only with original/public
+interfaces and reproducible examples; live mutations require separate authorization.
 
 ## License and provenance
 Original code, skill text, documentation, configurations and synthetic results are MIT licensed. There are no external model weights or datasets. Linked standards/papers retain their own copyrights and are not bundled. No proprietary skill text is redistributed.
 
 ## Additional skill case: plainspoken writing
 `skills/plainspoken-writing/` contains a newly authored editing workflow with 20 synthetic regression fixtures. It checks whether edits preserve uncertainty, scope, permission boundaries, and factual meaning while removing formulaic prose. Fixtures are qualitative examples, not automated model-evaluation results. No user conversations are included.
+
+Historical MANIFEST.json files describe their original snapshots, not current-tree
+integrity after subsequent documentation or code additions. The safe wrapper emits
+a fresh source/output hash manifest for each reproduction; see [provenance notes](docs/reproduction.md#historical-evidence).

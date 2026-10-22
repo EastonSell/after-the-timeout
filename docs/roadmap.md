@@ -3,9 +3,11 @@
 The initial simulator and skills are the first testable layer of a broader capability atlas.
 
 ## Milestone 1: reproducible foundation
-Completed locally: ten recovery tests, 96 deterministic policy trials, two original skills, public capability/source matrix. Parent publication and remote CI verification are tracked separately.
+Completed: baseline recovery corpus, public capability/source matrix, stale-status, key-lifetime and late-original-commit follow-ons, plus durable checkpoint tooling. The aggregate test runner now includes all 92 tests across seven suites. Source publication and hosted CI are distinct; this release does not claim hosted CI results.
 
 ## Milestone 2: independent behavioral evaluation
+A narrow handoff review is complete: one fresh tool-assisted reviewer matched 48 written fields across eight constructed cases. The original response and limits are preserved in [the report](../milestones/handoff-review/results/REPORT.md). It is not a randomized or comparative efficacy result. The broader recovery-policy evaluation below remains future work.
+
 Prepare held-out fake-service tasks with stale statuses, malformed output, missing capabilities, conflicting idempotency payloads and partial commits. Compare no skill, recovery skill, and unrelated-skill controls. Use identical prompts, model versions and tool budgets; separate safety/duplicate errors from ordinary task failure. Run fresh evaluators without expected answers. Publish task fixtures, outputs after secret scanning, failure categories, call counts and confidence intervals by task family. No paid API/model run has been performed yet.
 
 ## Milestone 3: interface-grounded workflow cases
