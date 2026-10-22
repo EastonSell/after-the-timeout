@@ -1,0 +1,119 @@
+{
+  "measurement_type": "synthetic temporary-workspace fixtures",
+  "reproduction_claims": "Invented fixture values, not commands executed by validator.",
+  "receipts": "Invented local records, not live publication evidence.",
+  "cases": {
+    "consistent_local_claims": {
+      "integrity_valid": true,
+      "handoff_state": "ready_for_review",
+      "publication_evidence": "recorded_complete",
+      "errors": [],
+      "blockers": [],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "missing_artifact": {
+      "integrity_valid": false,
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "errors": [
+        "input.txt: artifact missing or not a regular file"
+      ],
+      "blockers": [],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "hash_mismatch": {
+      "integrity_valid": false,
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "errors": [
+        "answer.txt: hash mismatch"
+      ],
+      "blockers": [],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "partial_publication": {
+      "integrity_valid": true,
+      "handoff_state": "blocked",
+      "publication_evidence": "recorded_partial",
+      "errors": [],
+      "blockers": [
+        "publication evidence is incomplete for the declared destination"
+      ],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "uncertain_operation": {
+      "integrity_valid": true,
+      "handoff_state": "blocked",
+      "publication_evidence": "recorded_complete",
+      "errors": [],
+      "blockers": [
+        "operation fixture-upload: uncertain; observe before retry"
+      ],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "current_revision_changed": {
+      "integrity_valid": false,
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "errors": [
+        "source_commit differs from independently supplied current_commit"
+      ],
+      "blockers": [],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    },
+    "wrong_receipt_destination": {
+      "integrity_valid": false,
+      "handoff_state": "invalid",
+      "publication_evidence": "not_recorded",
+      "errors": [
+        "receipt destination or commit mismatch"
+      ],
+      "blockers": [
+        "publication evidence is incomplete for the declared destination"
+      ],
+      "approval_granted": false,
+      "limits": [
+        "Current commit is caller-supplied; working tree ancestry is not verified.",
+        "Commands are inspected, never executed; passing results are recorded claims.",
+        "Receipts are checked locally, not authenticated or remotely verified.",
+        "No status here grants permission to retry, execute, publish or share."
+      ]
+    }
+  }
+}

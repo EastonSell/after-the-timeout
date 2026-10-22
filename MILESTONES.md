@@ -11,3 +11,5 @@ All experiments and skills are original MIT-licensed work grounded in linked pub
 4. [Idempotency key-lifetime follow-on](milestones/key-lifetime/README.md): 216 unique deterministic cells show that expiry restores duplicates despite reusing a key. A conservative lifetime guard produced zero extra commits but left 10 outcomes unresolved; 11 new regression tests and pre-run predictions accompany per-cell results.
 
 5. [Late-original-commit follow-on](milestones/late-commit/README.md): 128 deterministic event-queue cells expose two delayed duplicates after the prior lifetime guard returns success. A known-completion-bound control avoids duplicates but leaves 16 outcomes unresolved. Twelve new tests cover event ordering, retention boundaries and settled-state evidence.
+
+6. [Durable checkpoint handoff](milestones/checkpoint-handoff/README.md): original public skill, read-only manifest validator and seven temporary-workspace failure examples. Nineteen tests distinguish mismatched/missing evidence from pending work and partial publication, without treating receipts as permission or proof of remote state.
