@@ -1,0 +1,4713 @@
+{
+  "measurement_type": "deterministic offline event simulation",
+  "prediction_sha256": "60573af6dbf4a35845465e1af49108a443c712f7ae685a407a6e3d3af6d4491d",
+  "unique_cells": 128,
+  "summary": {
+    "blind_retry": {
+      "runs": 32,
+      "duplicates": 6,
+      "deferred_duplicates": 4,
+      "unresolved": 0,
+      "calls": 64
+    },
+    "inspect_first": {
+      "runs": 32,
+      "duplicates": 5,
+      "deferred_duplicates": 4,
+      "unresolved": 0,
+      "calls": 92
+    },
+    "lifetime_guard": {
+      "runs": 32,
+      "duplicates": 2,
+      "deferred_duplicates": 2,
+      "unresolved": 10,
+      "calls": 82
+    },
+    "wait_terminal": {
+      "runs": 32,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 16,
+      "calls": 72
+    }
+  },
+  "rows": [
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 1,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 3,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 3,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 0,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 1,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 1,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 1,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 3,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "absent",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 0,
+      "settled_at": 3,
+      "settled_commits": 0,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "not_committed",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 2,
+      "settled_at": 3,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": true,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "committed",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": null,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 0,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 0,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 0,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 1,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 1,
+      "pending_at_return": 1,
+      "immediate_commits": 0,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 1,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 1,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": true
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 2,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 2,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 2,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 2,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "blind_retry",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 2,
+      "settled_at": 3,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "inspect_first",
+      "runs": 1,
+      "decision": "committed",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 2,
+      "settled_at": 3,
+      "settled_commits": 2,
+      "duplicates": 1,
+      "deferred_duplicates": 0,
+      "unresolved": 0,
+      "calls": 3,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 3,
+          "event": "retry_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "lifetime_guard",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    },
+    {
+      "original_outcome": "late",
+      "status_supported": false,
+      "key_lifetime": 1,
+      "delay": 3,
+      "policy": "wait_terminal",
+      "runs": 1,
+      "decision": "needs_reconciliation",
+      "returned_at": 3,
+      "pending_at_return": 0,
+      "immediate_commits": 1,
+      "settled_at": 3,
+      "settled_commits": 1,
+      "duplicates": 0,
+      "deferred_duplicates": 0,
+      "unresolved": 1,
+      "calls": 2,
+      "trace": [
+        {
+          "time": 0,
+          "event": "initial_timeout",
+          "operation_id": "example-001"
+        },
+        {
+          "time": 2,
+          "event": "original_completion",
+          "operation_id": "example-001",
+          "deduplicated": false
+        },
+        {
+          "time": 3,
+          "event": "status",
+          "state": "unknown",
+          "operation_id": "example-001"
+        }
+      ]
+    }
+  ]
+}
