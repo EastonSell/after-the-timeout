@@ -1,0 +1,12 @@
+{
+  "artifact_sha256": {
+    "experiment.json": "b037f6e8abe5ff1561f7679e0e9e83bc18625d668956ce0f29d12388ec97594c",
+    "rows.jsonl": "8518657fd39bf9a442e4f8e77b61be05f30b98588f24c1d4067eef0b787b0c07",
+    "status.json": "fe88fdc6d9a3a04bf36e1fa4108600286166e11fb3798091911c55c011fd138f"
+  },
+  "cases_verified": 256,
+  "closed_form_metrics_match": true,
+  "coverage_equals_allowed_cases": true,
+  "label": "post-hoc independent recount, not a pre-run prediction",
+  "raw_equals_final_rows": true
+}

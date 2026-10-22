@@ -1,0 +1,2146 @@
+[
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "fresh",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "incomplete",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "stale_negative",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": false,
+    "policy": "capability_guard"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "blind_batch"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "missing_is_absent"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "evidence_only"
+  },
+  {
+    "initial_committed": [
+      "a",
+      "b",
+      "c"
+    ],
+    "status_mode": "unsupported",
+    "per_item_idempotency": true,
+    "policy": "capability_guard"
+  }
+]
