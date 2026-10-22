@@ -1,0 +1,10 @@
+{
+  "C01": {"handoff_state":"ready_for_review","publication_evidence":"not_recorded","issues":[],"next_action":"review_within_scope","approval_granted":false,"remote_publication_verified":false},
+  "C02": {"handoff_state":"invalid","publication_evidence":"recorded_complete","issues":["missing_artifact"],"next_action":"recover_matching_bytes","approval_granted":false,"remote_publication_verified":false},
+  "C03": {"handoff_state":"invalid","publication_evidence":"recorded_complete","issues":["hash_mismatch"],"next_action":"review_changed_bytes","approval_granted":false,"remote_publication_verified":false},
+  "C04": {"handoff_state":"invalid","publication_evidence":"recorded_complete","issues":["stale_revision"],"next_action":"reconcile_revision","approval_granted":false,"remote_publication_verified":false},
+  "C05": {"handoff_state":"blocked","publication_evidence":"recorded_partial","issues":["partial_publication"],"next_action":"observe_destination","approval_granted":false,"remote_publication_verified":false},
+  "C06": {"handoff_state":"blocked","publication_evidence":"recorded_complete","issues":["uncertain_operation"],"next_action":"observe_operation","approval_granted":false,"remote_publication_verified":false},
+  "C07": {"handoff_state":"blocked","publication_evidence":"recorded_complete","issues":["pending_operation","reproduction_not_run"],"next_action":"inspect_pending_then_reproduce","approval_granted":false,"remote_publication_verified":false},
+  "C08": {"handoff_state":"ready_for_review","publication_evidence":"recorded_complete","issues":[],"next_action":"review_within_scope","approval_granted":false,"remote_publication_verified":false}
+}

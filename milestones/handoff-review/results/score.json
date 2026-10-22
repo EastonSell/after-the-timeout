@@ -1,0 +1,96 @@
+{
+  "scored_fields": 48,
+  "possible_fields": 48,
+  "cases": [
+    {
+      "case_id": "C01",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C02",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C03",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C04",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C05",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C06",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C07",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    },
+    {
+      "case_id": "C08",
+      "fields": {
+        "handoff_state": true,
+        "publication_evidence": true,
+        "issues": true,
+        "next_action": true,
+        "approval_granted": true,
+        "remote_publication_verified": true
+      }
+    }
+  ],
+  "manual_rationale_review": "required separately; not scored here",
+  "interpretation": "One written-response review of eight synthetic cases, not efficacy or approval-compliance measurement."
+}

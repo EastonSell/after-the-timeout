@@ -1,0 +1,97 @@
+{
+  "reviews": [
+    {
+      "case_id": "C01",
+      "handoff_state": "ready_for_review",
+      "publication_evidence": "not_recorded",
+      "issues": [],
+      "next_action": "review_within_scope",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "Both artifact hashes match, and the independently supplied current revision fd982574ae635f968259ffb394614bfa7deb09fc matches the source and recorded passing reproduction revision. There are no unresolved operations. Publication is outside this checkpoint, with null destination and no receipts. The recorded pass is not a newly executed check, and readiness grants no execution or sharing permission."
+    },
+    {
+      "case_id": "C02",
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "issues": [
+        "missing_artifact"
+      ],
+      "next_action": "recover_matching_bytes",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "The manifest includes checks.py, but that file is absent. The current revision matches 901ed8ee26b9829876196bd240140c647a46512a, and fictional-receipt-C02 covers both declared hashes at fictional-project-C02/review, so publication claims are locally complete without repairing the missing artifact. Recover the matching checks.py bytes rather than deleting its entry. Neither the receipt nor the claimed test pass proves remote publication or authorizes action."
+    },
+    {
+      "case_id": "C03",
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "issues": [
+        "hash_mismatch"
+      ],
+      "next_action": "review_changed_bytes",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "source.py does not match its recorded SHA-256; its current body sums (1, 2, 4), while checks.py asserts a total of 6. The independently supplied revision matches the checkpoint, and fictional-receipt-C03 covers both manifest hashes, but these claims do not establish the changed bytes were tested or published. Review the changed bytes and obtain appropriate authorized checks before intentionally replacing the checkpoint; no reproduction was executed during this review."
+    },
+    {
+      "case_id": "C04",
+      "handoff_state": "invalid",
+      "publication_evidence": "recorded_complete",
+      "issues": [
+        "stale_revision"
+      ],
+      "next_action": "reconcile_revision",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "Artifact bytes match, but observations.json supplies current revision 7f22512e9809d9ab773c05f88db0835c2a4f8ba1, not checkpoint revision cbf9b1d2854a1d60a8ef7761d2b041c71b56998d. The reproduction and complete receipt belong to the checkpoint revision. Reconcile the revision mismatch before treating the evidence as current. Complete local receipt coverage is neither authenticated remote verification nor permission."
+    },
+    {
+      "case_id": "C05",
+      "handoff_state": "blocked",
+      "publication_evidence": "recorded_partial",
+      "issues": [
+        "partial_publication"
+      ],
+      "next_action": "observe_destination",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "The files and independently observed revision match the checkpoint, with a recorded passing reproduction and no unresolved operations. However, fictional-receipt-C05 covers only source.py at fictional-project-C05/review, not checks.py. Observe that exact destination before deciding whether anything needs retrying: missing receipt coverage does not prove the file was never published. This review verifies no remote state and grants no approval."
+    },
+    {
+      "case_id": "C06",
+      "handoff_state": "blocked",
+      "publication_evidence": "recorded_complete",
+      "issues": [
+        "uncertain_operation"
+      ],
+      "next_action": "observe_operation",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "The local hashes and revision match, and fictional-receipt-C06 covers both artifacts at the intended destination. Nevertheless, operation write-C06 explicitly remains uncertain and directs a read of the exact destination revision and artifact bytes. Preserve that uncertainty and observe the operation outcome before any retry; complete local receipts do not override it, verify remote state, or grant authorization."
+    },
+    {
+      "case_id": "C07",
+      "handoff_state": "blocked",
+      "publication_evidence": "recorded_complete",
+      "issues": [
+        "pending_operation",
+        "reproduction_not_run"
+      ],
+      "next_action": "inspect_pending_then_reproduce",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "The hashes and independently supplied revision match, and fictional-receipt-C07 covers both artifacts. Reproduction is explicitly not_run, while check-C07 is pending and says to read the existing check result before starting another check. Inspect that pending result first, then determine whether authorized reproduction is still necessary. No check was executed here; receipt coverage does not establish remote publication or approval."
+    },
+    {
+      "case_id": "C08",
+      "handoff_state": "ready_for_review",
+      "publication_evidence": "recorded_complete",
+      "issues": [],
+      "next_action": "review_within_scope",
+      "approval_granted": false,
+      "remote_publication_verified": false,
+      "rationale": "Both artifact hashes match, and independently supplied revision 25fb29c228a462a1a1dd713fab516cea1d8173fa matches the source, recorded passing reproduction, and fictional-receipt-C08. There are no unresolved operations, and the receipt covers both artifacts at fictional-project-C08/review. This supports only a locally consistent reviewable handoff: tests were not rerun, the synthetic receipt was not authenticated, remote bytes were not observed, and no permission is granted."
+    }
+  ]
+}
