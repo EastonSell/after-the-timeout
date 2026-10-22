@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="718" viewBox="0 0 1120 718" role="img" aria-labelledby="title description">
+<title id="title">A lost reply can hide a successful write</title><desc id="description">Sequence illustration: caller submits op-1 and add A, service commits one effect, reply is lost, caller retries with same ID and payload. Without deduplication there are two effects; a durable payload-bound key retains one; expiry can permit two. A timeout before any commit looks identical to the caller.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse"><path d="M0,0 L10,4 L0,8 Z" fill="#076f6d"/></marker></defs>
+<rect width="1120" height="718" fill="#f8faf9"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="32" y="45" font-size="30" fill="#153346" font-weight="bold">A lost reply can hide a successful write</text>
+<text x="32" y="78" font-size="17" fill="#486271" font-weight="normal">SYNTHETIC SEQUENCE: service contracts below are chosen rules, not live API guarantees</text>
+<rect x="72" y="104" width="216" height="54" rx="12" fill="#e8f5f2" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="92" y="139" font-size="21" fill="#076f6d" font-weight="bold">Caller</text>
+<rect x="480" y="104" width="216" height="54" rx="12" fill="#e8f5f2" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="500" y="139" font-size="21" fill="#076f6d" font-weight="bold">Service</text>
+<rect x="864" y="104" width="184" height="54" rx="12" fill="#e8f5f2" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="884" y="139" font-size="21" fill="#076f6d" font-weight="bold">Durable effects</text>
+<line x1="180" y1="166" x2="180" y2="464" stroke="#9bb0b8" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="588" y1="166" x2="588" y2="464" stroke="#9bb0b8" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="956" y1="166" x2="956" y2="464" stroke="#9bb0b8" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="180" y1="207" x2="588" y2="207" stroke="#076f6d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="207" y="192" font-size="20" fill="#153346" font-weight="normal">submit op-1: add A</text>
+<line x1="588" y1="264" x2="956" y2="264" stroke="#076f6d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="619" y="249" font-size="20" fill="#153346" font-weight="normal">commit</text>
+<rect x="905" y="282" width="102" height="45" rx="12" fill="#e8f5f2" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="922" y="312" font-size="19" fill="#076f6d" font-weight="bold">1 effect</text>
+<line x1="588" y1="346" x2="180" y2="346" stroke="#076f6d" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="206" y="331" font-size="19" fill="#9c460c" font-weight="normal">reply lost: caller sees timeout</text>
+<line x1="365" y1="335" x2="385" y2="357" stroke="#9c460c" stroke-width="2.5"/>
+<line x1="385" y1="335" x2="365" y2="357" stroke="#9c460c" stroke-width="2.5"/>
+<line x1="180" y1="423" x2="588" y2="423" stroke="#076f6d" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="207" y="407" font-size="19" fill="#153346" font-weight="normal">retry same ID + same payload</text>
+<rect x="32" y="490" width="336" height="153" rx="12" fill="#fff1e3" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="50" y="524" font-size="21" fill="#076f6d" font-weight="bold">No deduplication</text>
+<text x="50" y="560" font-size="25" fill="#153346" font-weight="bold">2 effects</text>
+<text x="50" y="594" font-size="17" fill="#486271" font-weight="normal">ID labels the request;</text>
+<text x="50" y="618" font-size="17" fill="#486271" font-weight="normal">it does not prevent repeats.</text>
+<rect x="392" y="490" width="336" height="153" rx="12" fill="#e8f5f2" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="410" y="524" font-size="21" fill="#076f6d" font-weight="bold">Durable key contract</text>
+<text x="410" y="560" font-size="25" fill="#153346" font-weight="bold">1 effect</text>
+<text x="410" y="594" font-size="17" fill="#486271" font-weight="normal">Repeat reuses original result</text>
+<text x="410" y="618" font-size="17" fill="#486271" font-weight="normal">while the promise remains valid.</text>
+<rect x="752" y="490" width="336" height="153" rx="12" fill="#fff1e3" stroke="#9bb0b8" stroke-width="1.5"/>
+<text x="770" y="524" font-size="21" fill="#076f6d" font-weight="bold">Key expired at retry</text>
+<text x="770" y="560" font-size="25" fill="#153346" font-weight="bold">2 effects</text>
+<text x="770" y="594" font-size="17" fill="#486271" font-weight="normal">Protection ends; the earlier</text>
+<text x="770" y="618" font-size="17" fill="#486271" font-weight="normal">committed effect remains.</text>
+<text x="32" y="682" font-size="18" fill="#486271" font-weight="normal">A before-commit timeout looks the same to the caller. Its initial hidden effect count would be zero.</text>
+<text x="32" y="707" font-size="16" fill="#486271" font-weight="normal">The demo counts evaluator-only truth. A real caller needs service-specific evidence or must preserve uncertainty.</text>
+</g></svg>

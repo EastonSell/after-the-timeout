@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.000
+The service can commit successfully even when its reply never reaches the caller.
+
+2
+00:00:06.000 --> 00:00:12.000
+A timeout cannot distinguish a request that never committed from a lost post-commit reply.
+
+3
+00:00:12.000 --> 00:00:18.000
+An ID is only a label unless the service provides a valid deduplication contract.
+
+4
+00:00:18.000 --> 00:00:24.000
+Use operation-specific evidence and the real retention contract before deciding to retry.

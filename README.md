@@ -1,83 +1,58 @@
-# Research Workflow Atlas
+# After the Timeout
 
-A source-linked map of public tool capabilities, reusable skills, and executable failure/recovery experiments. The first benchmark covers uncertain writes and paginated reads; the growing atlas connects these patterns to published vendor APIs and independently testable workflows.
+A tool call times out. Did the write fail, finish, or leave only part of a batch committed? Retrying can create duplicates; stopping can leave legitimate work unfinished.
 
-See [public capability catalog](docs/public-capabilities.md) and [research roadmap](docs/roadmap.md).
+This project studies how recovery should depend on the evidence an interface exposes. Deterministic simulators cover uncertain writes, stale status, expiring keys, late commits and partial batches. Related work examines checkpoint handoffs, retained experiment evidence and how to report what is still unknown.
 
-## Study and skill guide
+## Start here
 
-- [Recovery baseline and follow-ons](MILESTONES.md): uncertain writes, stale status, expiring keys, late commits and checkpoint handoffs. The baseline finding and safe reproduction entrypoint are below.
-- [Partial-commit results](milestones/partial-commit/REPORT.md): 256 fixed synthetic cases test item-level recovery. Without item keys, evidence-only recovery avoided extra effects but left outcomes unresolved; the keyed blind baseline was also exact-once in all 32 of its cases. See the [protocol, tests and fresh-output reproduction](milestones/partial-commit/README.md). No live service or model was invoked.
-- Public task skills: [uncertain-operation recovery](skills/recover-uncertain-operation/SKILL.md), [partial-batch recovery](skills/recover-partial-batch/SKILL.md), [checkpoint handoffs](skills/checkpoint-handoff/SKILL.md), [experiment-evidence retention](skills/retain-experiment-evidence/SKILL.md) and [plain language](skills/plain-language/SKILL.md). Their fixtures and simulator checks do not establish model adherence.
-- [Release validation](skills/release-validation/README.md): ZIP allowlist/hash checks, declared dependencies and optional trusted tests from a fresh extraction. The guide separates packaging checks, test outcomes and scientific reproduction, and links its own 16-test fixture suite. It is not included in the aggregate matrix below.
+- [Trace one uncertain write by hand](docs/START_HERE.md).
+- [Read the research overview](docs/RESEARCH_OVERVIEW.md) for questions, controls, related work and falsifiable next steps.
+- [Browse the completed studies](MILESTONES.md), [partial-commit report](milestones/partial-commit/REPORT.md) and [public capability catalog](docs/public-capabilities.md).
+
+## Watch the concept in 24 seconds
+
+[![The same timeout can conceal either no commit or one commit. Retrying the same ID produces two effects without deduplication, one with a durable payload-bound key and two after key expiry. Unknown must remain unknown without reliable evidence.](docs/animations/poster.png)](docs/animations/concept.mp4)
+
+[MP4](docs/animations/concept.mp4) · [Optional GIF preview](docs/animations/concept.gif) · [Text transcript](docs/animations/transcript.txt) · [Captions](docs/animations/captions.vtt)
+
+Synthetic contracts · not real API guarantees. No audio. The poster and transcript provide a no-motion alternative. The downloaded [HTML viewer](docs/animations/index.html) is static by default and never autoplays.
+
+The simulators test explicit policies under declared contracts. They do not estimate production incident rates or show that a language model will follow a written skill.
+
+## Baseline result
+
+**Inspecting first helped under the baseline's contracts.** Blind retry produced six duplicate commits across 48 trials; inspect-first produced none, using 84 rather than 72 calls and leaving six outcomes unresolved. Those trials reorder 16 unique scenarios, so they are not 48 independent incidents.
+
+## Follow-on studies
+
+**Weakening the contracts exposed new failures.** A [stale status read](milestones/stale-status/README.md) defeated inspect-first recovery. [Key expiry](milestones/key-lifetime/README.md) restored duplicate risk. [Late original commits](milestones/late-commit/README.md) produced duplicates even after a policy had returned success. A completion report needs a stated observation horizon.
+
+**Partial batches need item-level reasoning.** In [256 constructed cases](milestones/partial-commit/REPORT.md), no-key evidence-only recovery avoided extra effects but left outcomes unresolved. With durable item keys, both the capability-aware policy and blind keyed baseline were exact-once in all 32 cases of their respective groups; the blind baseline used fewer calls. The result depends on terminal original operations and truthful, durable contracts.
+
+**Handoff evidence needs separate validation.** [Checkpoint tests](milestones/checkpoint-handoff/README.md) check missing or mismatched artifacts. One [held-out fictional-case review](milestones/handoff-review/results/REPORT.md) matched 48 predeclared written fields across eight cases. That small review does not measure live execution or approval compliance.
 
 ## Reproduce
-Python 3.10+ standard library only. No downloads, credentials or remote execution.
+
+Python 3.10+ standard library only. From the repository root:
 
 ```sh
 python tools/run_all_tests.py
 python tools/reproduce.py --study baseline --out ../atlas-baseline-run-001
 ```
 
-The aggregate runner executes seven named suites in separate interpreters,
-including 84 existing tests and eight release-tool tests (92 total for that matrix).
-Later study and skill suites have their own linked test entrypoints. It continues
-through failing suites and exits nonzero if any suite fails. See the full
-[test matrix and safe reproduction guide](docs/reproduction.md). The output path
-above must be new, outside this repository, with an existing parent. The wrapper
-runs unchanged study sources in a temporary copy and never overwrites historical
-results. Do not directly rerun legacy run_experiment.py entry points against the
-source checkout: those preserved scripts overwrite their historical outputs.
+Use a new output directory outside the repository with an existing parent. The wrapper copies unchanged study sources and protects historical outputs. Preserved legacy `run_experiment.py` scripts can overwrite their original result files; use the wrapper instead. The [reproduction guide](docs/reproduction.md) lists the aggregate matrix and later suites, which have separate entrypoints.
 
-The original ten baseline tests cover committed and uncommitted timeouts, idempotency, unsupported status, terminal denial, an empty page with continuation, and a cursor loop. The deterministic corpus has 16 unique scenarios, run in three seeded orders for 48 trials per policy. Repeated seed orders do not create independent statistical evidence.
-
-## Baseline result
-In the checked-in run, blind retry produced 6 duplicate commits; inspect-first produced 0, at 84 rather than 72 total calls. Inspect-first left 6 outcomes explicitly unresolved because neither status nor idempotency provided safe recovery. That is intentional incompleteness, not an unqualified success. In those cases the environment's actual hidden state and the agent's justified knowledge differ. Denials stopped after one call.
-
-The corpus assumes a reliable immediate status response when that capability exists, and correctly implemented idempotency when enabled. Real services can violate these assumptions through eventual consistency, partial commits, expired keys, conflicting payloads, or status lookup failure. Thus the result is an executable counterexample to blind retries, not a proof of safe production behavior or an estimated real-world failure rate. It measures calls, not tokens, wall-clock latency, or agent intelligence.
+Historical manifests cover their recorded snapshots. New reproduction manifests describe the fresh source/output set; they do not retroactively validate every later addition.
 
 ## Public interface atlas
-| Capability | Input | Observable result | Common failure | Recovery boundary |
-|---|---|---|---|---|
-| Discover tools | Public tool-list endpoint and cursor | Name, input schema, optional output schema | Stale catalog, missing capability | Refresh discovery; do not invent a tool |
-| Validate result | Declared output schema and returned result | Protocol error vs tool-level error vs data | Treating transport success as operation success | Validate both layers |
-| Read pages | Query plus opaque continuation | Items and next cursor | Empty intermediate page, repeated cursor | Continue on cursor; detect loops and cap work |
-| Submit operation | Authorized payload plus supported idempotency key | Commit or uncertain result | Timeout after commit | Inspect exact operation before retry |
-| Observe operation | Exact operation ID | Committed, not committed, unknown | Stale or unsupported status | Preserve unknown; do not infer non-commit |
-| Complete workflow | Verified final artifact/state | Evidence-linked completion | Declaring done on request acceptance | Report confirmed outcome and unresolved limits |
 
-These are abstract public contracts. No named private tools, authenticated inventories, credentials, private logs or proprietary instruction text are included.
+The [capability catalog](docs/public-capabilities.md) separates tool discovery, schemas, pagination, writes and status observation. Check the actually exposed operation and its contract before choosing a recovery path. Vendor documentation describes possible interfaces; it does not establish an account's access or a connector's capabilities.
 
-## Reusable workflow
-`skills/recover-uncertain-operation/SKILL.md` is newly authored for this project using the skill-creation workflow. Its frontmatter passed the available skill validator. The code tests validate the simulator's decision invariants; they do not establish that an LLM will follow the skill. Independent forward-testing with a model and adversarial status responses remains future work.
+## Reuse the workflows, then test them
 
-## Primary references
-- JSON-RPC 2.0 specification: https://www.jsonrpc.org/specification. Request identifiers and response/error envelopes do not themselves establish application-level idempotency.
-- MCP tools specification, pinned 2025-11-25: https://modelcontextprotocol.io/specification/2025-11-25/server/tools. Public tool discovery, input/output schemas, and tool errors are interface foundations, not blanket authorization.
-- AgentBench (2023): https://arxiv.org/abs/2308.03688. Broader multi-environment agent evaluation context; not reproduced here.
-- τ-bench (2024): https://arxiv.org/abs/2406.12045. Motivates evaluating stateful tool interactions and consistency, rather than plausible prose alone; not reproduced here.
+Original public skills cover [uncertain writes](skills/recover-uncertain-operation/SKILL.md), [partial batches](skills/recover-partial-batch/SKILL.md), [checkpoint handoffs](skills/checkpoint-handoff/SKILL.md), [evidence retention](skills/retain-experiment-evidence/SKILL.md), [release validation](skills/release-validation/README.md) and [plain language](skills/plain-language/SKILL.md). Their format, fixture and software checks are recorded separately from behavioral efficacy.
 
-Sources checked October 21, 2026. No claim of exhaustive coverage or research novelty.
+Next work should combine late execution, key expiry and partial commits, then compare model-assisted recovery under fixed budgets. Measure duplicates, actual completion, justified completion reports, unresolved outcomes and cost separately. [The overview](docs/RESEARCH_OVERVIEW.md) explains the design.
 
-## Completed follow-ons and next work
-- [Stale status](milestones/stale-status/README.md): one stale read can defeat inspect-first recovery.
-- [Key lifetime](milestones/key-lifetime/README.md): expired idempotency keys restore duplicate risk.
-- [Late original commits](milestones/late-commit/README.md): two lifetime-guard duplicates occur after the policy returns success.
-- [Durable checkpoint handoffs](milestones/checkpoint-handoff/README.md): local evidence validation without treating receipts as permission.
-- [Held-out handoff review](milestones/handoff-review/results/REPORT.md): one tool-assisted reviewer matched 48 predeclared written fields across eight fictional cases. This is not randomized efficacy or actual approval-compliance evidence.
-- [Partial commits](milestones/partial-commit/REPORT.md): completed 256-case deterministic study, with raw rows, a post-hoc recount and explicit terminal-operation/durable-key assumptions.
-
-Still future: admission-time reservations, controlled recovery-skill
-comparisons, and realistic latency/fault models. Separate completion, duplicate cost,
-unresolved rate and wall-clock cost. Extend the atlas only with original/public
-interfaces and reproducible examples; live mutations require separate authorization.
-
-## License and provenance
-Original code, skill text, documentation, configurations and synthetic results are MIT licensed. There are no external model weights or datasets. Linked standards/papers retain their own copyrights and are not bundled. No proprietary skill text is redistributed.
-
-## Additional skill case: plainspoken writing
-`skills/plainspoken-writing/` contains a newly authored editing workflow with 20 synthetic regression fixtures. It checks whether edits preserve uncertainty, scope, permission boundaries, and factual meaning while removing formulaic prose. Fixtures are qualitative examples, not automated model-evaluation results. No user conversations are included.
-
-Historical MANIFEST.json files describe their original snapshots, not current-tree
-integrity after subsequent documentation or code additions. The safe wrapper emits
-a fresh source/output hash manifest for each reproduction; see [provenance notes](docs/reproduction.md#historical-evidence).
+Original code, skills, documentation and synthetic results are [MIT licensed](LICENSE). Linked standards and papers retain their copyrights. The catalog describes public interfaces rather than anyone's account access.
