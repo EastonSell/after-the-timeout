@@ -30,6 +30,19 @@ replaying the whole operation or asserting success. Further mutation, compensati
 or expanding the operation requires the applicable authorization; this skill does
 not provide it.
 
+## Immutable object batches are a distinct case
+
+For SHA-only Git tree construction, ledger entries can be expected object hashes
+rather than effectful item submissions. Repeating exact immutable contents has
+the same tree identity, even if the original attempt later finishes. Smaller
+bottom-up requests may assemble that same final root without publishing partial
+trees. Preserve all approved paths, modes and hashes, plus unaffected old entries;
+do not turn a transport workaround into a changed release. Tree existence is not
+commit or branch-publication success. Use the [content-addressed recovery
+example](../recover-uncertain-operation/references/content-addressed-tree-recovery.md)
+only under its stated assumptions. This is not a generic batch-retry guarantee or
+a route around a denial.
+
 The [offline example](../../milestones/partial-commit/PROTOCOL.md) models a terminal
 original attempt, durable keys, truthful capability metadata and successful
 recovery writes. It demonstrates those contracts, not live reliability or model
