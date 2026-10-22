@@ -1,0 +1,33 @@
+Documentation revision v2: current fixture evidence
+UTC: 2026-10-22T19:27:23Z
+Command: python3 -B -m unittest discover -s tests -v
+Environment: Python 3.12.14
+Scope: 16 existing synthetic/unit fixtures; no scientific experiments or external downloads.
+Execution trust: the authoring agent inspected the complete validator and fixture source before running it.
+The sources use the Python standard library, temporary fixture files, and inspected synthetic subprocess scripts.
+Execution permission is separate from this content review and the approval strings used by synthetic fixtures.
+No implementation or fixture source was changed for this documentation revision.
+
+test_archive_path_checked_before_extraction (test_validate_release.ReleaseTests.test_archive_path_checked_before_extraction) ... ok
+test_clean_extraction_runs_declared_test (test_validate_release.ReleaseTests.test_clean_extraction_runs_declared_test) ... ok
+test_duplicate_allowlist_and_case_collision_rejected (test_validate_release.ReleaseTests.test_duplicate_allowlist_and_case_collision_rejected) ... ok
+test_duplicate_archive_entry_rejected (test_validate_release.ReleaseTests.test_duplicate_archive_entry_rejected) ... ok
+test_external_model_stays_external_and_test_not_reported_passed (test_validate_release.ReleaseTests.test_external_model_stays_external_and_test_not_reported_passed) ... ok
+test_missing_allowlisted_entry_rejected (test_validate_release.ReleaseTests.test_missing_allowlisted_entry_rejected) ... ok
+test_missing_declared_document_dependency (test_validate_release.ReleaseTests.test_missing_declared_document_dependency) ... ok
+test_option_like_script_runs_file_not_python_option (test_validate_release.ReleaseTests.test_option_like_script_runs_file_not_python_option) ... ok
+test_private_category_rejected_even_if_allowlisted (test_validate_release.ReleaseTests.test_private_category_rejected_even_if_allowlisted) ... ok
+test_review_is_required (test_validate_release.ReleaseTests.test_review_is_required) ... ok
+test_size_limit (test_validate_release.ReleaseTests.test_size_limit) ... ok
+test_symlink_entry_rejected (test_validate_release.ReleaseTests.test_symlink_entry_rejected) ... ok
+test_tampered_bytes_rejected (test_validate_release.ReleaseTests.test_tampered_bytes_rejected) ... ok
+test_undeclared_document_dependency_detected_by_extracted_test (test_validate_release.ReleaseTests.test_undeclared_document_dependency_detected_by_extracted_test) ... ok
+test_unexpected_artifact_rejected (test_validate_release.ReleaseTests.test_unexpected_artifact_rejected) ... ok
+test_unsafe_paths (test_validate_release.ReleaseTests.test_unsafe_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.088s
+
+OK
+
+Exit status: 0
