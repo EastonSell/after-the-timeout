@@ -1,21 +1,17 @@
 A lost reply is not a failed write
+Rendered with actual Manim Community 0.22.0 (Cairo).
 SYNTHETIC CONTRACTS · NOT REAL API GUARANTEES
 
-No audio. All meaning is available in this transcript and on-screen text.
-The MP4 has no autoplay; the HTML viewer defaults to a static poster and respects reduced motion.
+24 seconds, silent. All meaning is available without motion in this complete transcript.
 
-00–06 seconds: Write / lost reply
-The service can commit successfully even when its reply never reaches the caller.
+00–08 seconds
+A service can commit even when its reply is lost.
 A caller submits op-1, add A. The toy service commits one effect and loses the reply. The caller observes reply unavailable. Hidden effects are evaluator-only ground truth, not information contained in the timeout.
 
-06–12 seconds: Same observation
-A timeout cannot distinguish a request that never committed from a lost post-commit reply.
+08–16 seconds
+The same timeout can hide zero or one initial commit.
 Two hidden histories produce the same caller observation: no initial commit with zero effects, or an initial commit with one effect. The caller sees reply unavailable in both. A missing or stale lookup is not automatically proof of noncommit.
 
-12–18 seconds: Retry the same ID
-An ID is only a label unless the service provides a valid deduplication contract.
-One sequential retry after an initial commit yields two effects with ID only and no deduplication; one with a retained durable payload-bound key; and two when a key expires exactly at retry time. If the initial call never committed, a no-dedup retry yields one effect. Effects survive key expiry; cache hits do not renew lifetime.
-
-18–24 seconds: Resolve or preserve unknown
-Use operation-specific evidence and the real retention contract before deciding to retry.
-The toy uses atomic calls, a single sequential caller and no late in-flight original. A live recovery decision also needs freshness, payload scope, expiry and whether the original may commit later. A reliable committed result may resolve uncertainty; otherwise preserve unknown. No real request or write occurs in this animation.
+16–24 seconds
+Same-ID retries depend on the contract. Otherwise preserve unknown.
+One sequential retry after an initial commit yields two effects with ID only and no deduplication; one with a retained durable payload-bound key; and two when a key expires exactly at retry time. If the initial call never committed, a no-dedup retry yields one effect. Effects survive key expiry; cache hits do not renew lifetime. The toy uses atomic calls, a single sequential caller and no late in-flight original. A live recovery decision also needs freshness, payload scope, expiry and whether the original may commit later. A reliable committed result may resolve uncertainty; otherwise preserve unknown. No real request or write occurs in this animation.

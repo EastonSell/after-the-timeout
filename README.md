@@ -12,11 +12,11 @@ This project studies how recovery should depend on the evidence an interface exp
 
 ## Watch the concept in 24 seconds
 
-[![The same timeout can conceal either no commit or one commit. Retrying the same ID produces two effects without deduplication, one with a durable payload-bound key and two after key expiry. Unknown must remain unknown without reliable evidence.](docs/animations/poster.png)](docs/animations/concept.mp4)
+[![A same-ID retry produces two hidden effects without deduplication, one under a retained durable payload-bound key, and two after key expiry in an atomic sequential toy.](docs/animations/poster.png)](docs/animations/concept.mp4)
 
-[MP4](docs/animations/concept.mp4) · [Optional GIF preview](docs/animations/concept.gif) · [Text transcript](docs/animations/transcript.txt) · [Captions](docs/animations/captions.vtt)
+[24-second Manim MP4](docs/animations/concept.mp4) · [Optional GIF preview](docs/animations/concept.gif) · [Text transcript](docs/animations/transcript.txt) · [Captions](docs/animations/captions.vtt)
 
-Synthetic contracts · not real API guarantees. No audio. The poster and transcript provide a no-motion alternative. The downloaded [HTML viewer](docs/animations/index.html) is static by default and never autoplays.
+Rendered with Manim Community 0.22.0. Synthetic contracts · not real API guarantees. No audio. The poster and transcript provide a no-motion alternative. The downloaded [HTML viewer](docs/animations/index.html) is static by default and never autoplays.
 
 The simulators test explicit policies under declared contracts. They do not estimate production incident rates or show that a language model will follow a written skill.
 
