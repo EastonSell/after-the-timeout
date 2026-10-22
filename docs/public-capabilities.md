@@ -25,6 +25,7 @@ Checked 2026-10-21. This catalog describes vendor-published interfaces, not any 
 |---|---|---|---|---|
 | recover-uncertain-operation | A write timed out and commit status is unknown | Reconciliation decision | Format check; offline policy invariants in ten tests | Independent LLM runs, stale status, real service-specific guarantees |
 | plainspoken-writing | Conversational prose obscures meaning with formulaic style | Revised text preserving scope and truth | Format check; twenty synthetic fixtures | Blinded multi-run human evaluation, factual preservation scoring |
+| [release-validation](../skills/release-validation/SKILL.md) | A reviewed ZIP needs packaging and standalone-test checks | Exact allowlist/hash validation and explicit test outcomes | 16 synthetic tests; independent code review and command-dispatch regression; skill format check | Per-release editorial/scientific review; external dependency authenticity; host-level isolation |
 
 ## Research citation matrix
 | Reference | What it contributes | What this repository tests | What remains untested |
