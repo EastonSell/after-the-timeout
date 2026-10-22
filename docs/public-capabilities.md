@@ -26,6 +26,7 @@ Checked 2026-10-21. This catalog describes vendor-published interfaces, not any 
 | recover-uncertain-operation | A write timed out and commit status is unknown | Reconciliation decision | Format check; offline policy invariants in ten tests | Independent LLM runs, stale status, real service-specific guarantees |
 | plainspoken-writing | Conversational prose obscures meaning with formulaic style | Revised text preserving scope and truth | Format check; twenty synthetic fixtures | Blinded multi-run human evaluation, factual preservation scoring |
 | [release-validation](../skills/release-validation/SKILL.md) | A reviewed ZIP needs packaging and standalone-test checks | Exact allowlist/hash validation and explicit test outcomes | 16 synthetic tests; independent code review and command-dispatch regression; skill format check | Per-release editorial/scientific review; external dependency authenticity; host-level isolation |
+| [plain-language](../skills/plain-language/SKILL.md) | Formulaic prose or empty contrasts distract from meaning | Revised text preserving facts, uncertainty and commitments | Small manual qualitative review of six synthetic prompts; unblinded single LLM evaluator | Independent blinded human review, repeated runs, held-out cases and measured reader outcomes |
 
 ## Research citation matrix
 | Reference | What it contributes | What this repository tests | What remains untested |
@@ -35,3 +36,4 @@ Checked 2026-10-21. This catalog describes vendor-published interfaces, not any 
 | Public MCP/JSON-RPC specifications above | Interface contracts and errors | Simplified outcome/pagination contracts | Wire-compatible MCP server/client implementation |
 
 Expansion criterion: add an entry when a primary public reference establishes the capability and an example improves a real decision. Add a behavioral claim only with a reproducible test and stated environment. Do not copy proprietary skill bodies or authenticated account inventories.
+
