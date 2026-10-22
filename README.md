@@ -4,6 +4,13 @@ A source-linked map of public tool capabilities, reusable skills, and executable
 
 See [public capability catalog](docs/public-capabilities.md) and [research roadmap](docs/roadmap.md).
 
+## Study and skill guide
+
+- [Recovery baseline and follow-ons](MILESTONES.md): uncertain writes, stale status, expiring keys, late commits and checkpoint handoffs. The baseline finding and safe reproduction entrypoint are below.
+- [Partial-commit results](milestones/partial-commit/REPORT.md): 256 fixed synthetic cases test item-level recovery. Without item keys, evidence-only recovery avoided extra effects but left outcomes unresolved; the keyed blind baseline was also exact-once in all 32 of its cases. See the [protocol, tests and fresh-output reproduction](milestones/partial-commit/README.md). No live service or model was invoked.
+- Public task skills: [uncertain-operation recovery](skills/recover-uncertain-operation/SKILL.md), [partial-batch recovery](skills/recover-partial-batch/SKILL.md), [checkpoint handoffs](skills/checkpoint-handoff/SKILL.md), [experiment-evidence retention](skills/retain-experiment-evidence/SKILL.md) and [plain language](skills/plain-language/SKILL.md). Their fixtures and simulator checks do not establish model adherence.
+- [Release validation](skills/release-validation/README.md): ZIP allowlist/hash checks, declared dependencies and optional trusted tests from a fresh extraction. The guide separates packaging checks, test outcomes and scientific reproduction, and links its own 16-test fixture suite. It is not included in the aggregate matrix below.
+
 ## Reproduce
 Python 3.10+ standard library only. No downloads, credentials or remote execution.
 
@@ -12,8 +19,9 @@ python tools/run_all_tests.py
 python tools/reproduce.py --study baseline --out ../atlas-baseline-run-001
 ```
 
-The aggregate runner executes all seven maintained suites in separate interpreters,
-including 84 existing tests and eight release-tool tests (92 total). It continues
+The aggregate runner executes seven named suites in separate interpreters,
+including 84 existing tests and eight release-tool tests (92 total for that matrix).
+Later study and skill suites have their own linked test entrypoints. It continues
 through failing suites and exits nonzero if any suite fails. See the full
 [test matrix and safe reproduction guide](docs/reproduction.md). The output path
 above must be new, outside this repository, with an existing parent. The wrapper
@@ -57,8 +65,9 @@ Sources checked October 21, 2026. No claim of exhaustive coverage or research no
 - [Late original commits](milestones/late-commit/README.md): two lifetime-guard duplicates occur after the policy returns success.
 - [Durable checkpoint handoffs](milestones/checkpoint-handoff/README.md): local evidence validation without treating receipts as permission.
 - [Held-out handoff review](milestones/handoff-review/results/REPORT.md): one tool-assisted reviewer matched 48 predeclared written fields across eight fictional cases. This is not randomized efficacy or actual approval-compliance evidence.
+- [Partial commits](milestones/partial-commit/REPORT.md): completed 256-case deterministic study, with raw rows, a post-hoc recount and explicit terminal-operation/durable-key assumptions.
 
-Still future: partial commits, admission-time reservations, controlled recovery-skill
+Still future: admission-time reservations, controlled recovery-skill
 comparisons, and realistic latency/fault models. Separate completion, duplicate cost,
 unresolved rate and wall-clock cost. Extend the atlas only with original/public
 interfaces and reproducible examples; live mutations require separate authorization.
