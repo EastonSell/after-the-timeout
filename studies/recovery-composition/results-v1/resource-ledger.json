@@ -1,0 +1,27 @@
+{
+  "api_calls": 0,
+  "compressed_row_bytes": 6000978,
+  "cpu_seconds": 72.50987749800001,
+  "device_actions": 0,
+  "elapsed_seconds": 72.5380463959882,
+  "external_writes": 0,
+  "finished": "2026-10-22T23:39:21.202764+00:00",
+  "frozen_caps": {
+    "max_output_bytes": 500000000,
+    "max_states_per_case_policy": 100000,
+    "max_total_states": 10000000,
+    "max_wall_seconds": 600
+  },
+  "groups": 3200,
+  "installs": 0,
+  "max_rss_kib": 23428,
+  "model_calls": 0,
+  "network_requests": 0,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "processes": 1,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "started": "2026-10-22T23:38:08.664732+00:00",
+  "states": 319968,
+  "terminal_paths": 86796,
+  "uncompressed_row_bytes": 274828679
+}

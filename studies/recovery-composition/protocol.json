@@ -1,0 +1,39 @@
+{
+  "version": "composition-v1",
+  "public_head": "2dd04258dd9e50b1769f8e8af39b31dc25a8f5a7",
+  "items": ["A", "B"],
+  "original_admission": 0,
+  "recovery_start": 1,
+  "exhaustive": {
+    "original_each": ["early", "late", "never"],
+    "late_effect": 3,
+    "original_terminal": 4,
+    "key_contracts": [["none", "reserve", 0], ["item", "reserve", 2], ["item", "reserve", 7], ["item", "cache", 2], ["item", "cache", 7], ["batch", "reserve", 2], ["batch", "reserve", 7], ["batch", "cache", 2], ["batch", "cache", 7]],
+    "observation_profiles": [["certified", 0], ["certified", 2]],
+    "retry_outcomes": ["success", "reject", "timeout_commit"],
+    "call_budget": 3,
+    "action_deadline": 10,
+    "evaluation_horizon": 15
+  },
+  "held_out_families": [
+    {"name": "expiry_late_original", "late_effects": [5, 8], "original_terminals": [6, 9], "ttls": [2, 6], "scopes": ["item", "batch"], "strategies": ["reserve", "cache"], "originals": [["early", "late"], ["late", "never"]], "observations": [["certified", 0], ["certified", 3]], "outcomes": ["success", "timeout_commit"], "budget": 3, "deadline": 14, "horizon": 19},
+    {"name": "no_terminal_evidence", "late_effects": [3], "original_terminals": [4], "ttls": [2, 20], "scopes": ["item", "batch"], "strategies": ["reserve", "cache"], "originals": [["early", "never"], ["late", "never"]], "observations": [["opaque", 0], ["unavailable", 0]], "outcomes": ["success", "reject", "timeout_commit"], "budget": 3, "deadline": 10, "horizon": 15},
+    {"name": "tight_deadline_and_budget", "late_effects": [3], "original_terminals": [4], "ttls": [2, 20], "scopes": ["none", "item", "batch"], "strategies": ["reserve"], "originals": [["early", "never"], ["never", "never"], ["early", "early"]], "observations": [["certified", 0], ["certified", 2]], "outcomes": ["success", "reject", "timeout_commit"], "budget": 2, "deadline": 4, "horizon": 9}
+  ],
+  "read_latency": 1,
+  "retry_effect_delays": {"success": 1, "reject": null, "timeout_commit": 3},
+  "retry_response_delays": {"success": 2, "reject": 1, "timeout_commit": 1},
+  "retry_terminal_delays": {"success": 2, "reject": 1, "timeout_commit": 4},
+  "public_retry_bound": 4,
+  "costs": {"read": 1, "write": 1, "wait": 0},
+  "scheduling": "Every permutation of simultaneously enabled events at every tick; causal successors become enabled after their predecessor. Effects for one admitted batch at one tick are atomic as a group. Expiry is half-open and checked arithmetically at admission, not scheduled.",
+  "resource_limits": {"max_states_per_case_policy": 100000, "max_total_states": 10000000, "max_wall_seconds": 600, "max_output_bytes": 500000000},
+  "predictions": [
+    {"id": "P1", "claim": "horizon_aware has zero duplicate effects in all enumerated terminal scheduler paths", "kind": "assert"},
+    {"id": "P2", "claim": "capability_fallback has zero duplicate effects in all enumerated terminal scheduler paths", "kind": "assert"},
+    {"id": "P3", "claim": "At least one within-model counterexample makes naive_inspection unsafe", "kind": "assert"},
+    {"id": "P4", "claim": "At least one within-model counterexample makes blind_keyed unsafe despite an item-scoped reservation key", "kind": "assert"},
+    {"id": "P5", "claim": "horizon_aware completes whenever a safe omniscient schedule exists under the same budget and deadline", "kind": "falsifiable_not_required"},
+    {"id": "P6", "claim": "horizon_aware has no universally strict advantage over an adequate capability baseline", "kind": "boundary_not_ranking"}
+  ]
+}

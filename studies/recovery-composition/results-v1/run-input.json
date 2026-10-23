@@ -1,0 +1,13 @@
+{
+  "case_count": 800,
+  "cases_sha256": "c54a4ad57f23f5f0366721f6ba63328eeff368ed6669394cf0cbc33add8dcf6f",
+  "policies": [
+    "naive_inspection",
+    "blind_keyed",
+    "capability_fallback",
+    "horizon_aware"
+  ],
+  "protocol_sha256": "d7f3b680664ed630057d8091f20388011847ea387867f4a5d3980ef4b5945786",
+  "protocol_text_sha256": "0ec8d71de2e4988aeb867abc05f1d36c59dc66d4d54cafad587b5ea14d772982",
+  "source_freeze_sha256": "856238a429ff2fd2084434c8d530fa0034143f65308e6153000a857250cfce9c"
+}

@@ -1,0 +1,1 @@
+{"coverage_manifest_sha256": "53bbf03853f8252529257ea0a812ee9424dfd090d1541d9a3f34f90bd109c969", "elapsed_seconds": 25.31178535700019, "groups": 3200, "imports_simulator": false, "max_rss_kib": 30904, "network_requests": 0, "passed": true, "paths": 86796, "processes": 1}

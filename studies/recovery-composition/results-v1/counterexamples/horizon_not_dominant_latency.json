@@ -1,0 +1,63 @@
+{
+  "baseline": {
+    "actual_complete_paths": 1,
+    "case_id": "exhaustive-0012",
+    "coverage": {
+      "branch_nodes": 6,
+      "coverage_hash": "a3d8f93a36f5595acc020fb8f33b2cffb3a27708310c2eb6364c509e213f41f0",
+      "paths": 1
+    },
+    "family": "exhaustive",
+    "justified_complete_paths": 1,
+    "max_calls": 1,
+    "max_return": 2,
+    "min_calls": 1,
+    "min_return": 2,
+    "omniscient_feasible": true,
+    "paths": 1,
+    "policy": "capability_fallback",
+    "post_return_unsafe_paths": 0,
+    "states": 7,
+    "unsafe_paths": 0
+  },
+  "case": {
+    "budget": 3,
+    "deadline": 10,
+    "family": "exhaustive",
+    "horizon": 15,
+    "id": "exhaustive-0012",
+    "lag": 0,
+    "late": 3,
+    "observation": "certified",
+    "original_terminal": 4,
+    "originals": [
+      "early",
+      "early"
+    ],
+    "retry_outcome": "success",
+    "scope": "item",
+    "strategy": "reserve",
+    "ttl": 7
+  },
+  "horizon": {
+    "actual_complete_paths": 3,
+    "case_id": "exhaustive-0012",
+    "coverage": {
+      "branch_nodes": 9,
+      "coverage_hash": "69d7934e66c95c8b46665cf1e9b88af94a05b9446b2e375e610b2c5e62a43cb2",
+      "paths": 3
+    },
+    "family": "exhaustive",
+    "justified_complete_paths": 3,
+    "max_calls": 1,
+    "max_return": 4,
+    "min_calls": 1,
+    "min_return": 4,
+    "omniscient_feasible": true,
+    "paths": 3,
+    "policy": "horizon_aware",
+    "post_return_unsafe_paths": 0,
+    "states": 12,
+    "unsafe_paths": 0
+  }
+}

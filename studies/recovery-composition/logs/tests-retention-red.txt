@@ -1,0 +1,40 @@
+test_branch_checker_rejects_missing_tie_order_family (test_evidence.EvidenceTests.test_branch_checker_rejects_missing_tie_order_family) ... ok
+test_checker_rejects_fabricated_positive (test_evidence.EvidenceTests.test_checker_rejects_fabricated_positive) ... FAIL
+test_predictions_are_retained_before_failure_exit (test_evidence.EvidenceTests.test_predictions_are_retained_before_failure_exit) ... FAIL
+test_visibility_contract_same_despite_hidden_fates (test_evidence.EvidenceTests.test_visibility_contract_same_despite_hidden_fates) ... ok
+test_batch_cache_suppression_does_not_fill_missing (test_model.ContractTests.test_batch_cache_suppression_does_not_fill_missing) ... ok
+test_cache_without_reservation_admits_concurrent_duplicate (test_model.ContractTests.test_cache_without_reservation_admits_concurrent_duplicate) ... ok
+test_checker_rejects_deleted_effect (test_model.ContractTests.test_checker_rejects_deleted_effect) ... ok
+test_cost_budget_and_terminal_horizon (test_model.ContractTests.test_cost_budget_and_terminal_horizon) ... ok
+test_effect_observation_ties_include_both_orders (test_model.ContractTests.test_effect_observation_ties_include_both_orders) ... ok
+test_expiry_does_not_cancel_original_owner (test_model.ContractTests.test_expiry_does_not_cancel_original_owner) ... ok
+test_grid_and_heldout_are_disjoint_named_families (test_model.ContractTests.test_grid_and_heldout_are_disjoint_named_families) ... ok
+test_horizon_policy_safe_through_all_pending_events (test_model.ContractTests.test_horizon_policy_safe_through_all_pending_events) ... ok
+test_independent_checker_accepts_then_rejects_tampered_cost (test_model.ContractTests.test_independent_checker_accepts_then_rejects_tampered_cost) ... ok
+test_oracle_is_information_bound_not_policy (test_model.ContractTests.test_oracle_is_information_bound_not_policy) ... ok
+test_public_action_function_does_not_receive_hidden_case (test_model.ContractTests.test_public_action_function_does_not_receive_hidden_case) ... ok
+test_reservation_prevents_concurrent_replay (test_model.ContractTests.test_reservation_prevents_concurrent_replay) ... ok
+test_retry_failure_not_reported_complete (test_model.ContractTests.test_retry_failure_not_reported_complete) ... ok
+test_stale_missing_is_not_terminal_noncommit (test_model.ContractTests.test_stale_missing_is_not_terminal_noncommit) ... ok
+
+======================================================================
+FAIL: test_checker_rejects_fabricated_positive (test_evidence.EvidenceTests.test_checker_rejects_fabricated_positive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_evidence.py", line 31, in test_checker_rejects_fabricated_positive
+    with self.assertRaises(ValueError):checker.validate(tampered)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_predictions_are_retained_before_failure_exit (test_evidence.EvidenceTests.test_predictions_are_retained_before_failure_exit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_evidence.py", line 22, in test_predictions_are_retained_before_failure_exit
+    self.assertFalse(result['success'])
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.174s
+
+FAILED (failures=2)

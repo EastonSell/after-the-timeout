@@ -1,0 +1,404 @@
+{
+  "case": {
+    "budget": 3,
+    "deadline": 14,
+    "family": "expiry_late_original",
+    "horizon": 19,
+    "id": "expiry_late_original-0551",
+    "lag": 0,
+    "late": 8,
+    "observation": "certified",
+    "original_terminal": 9,
+    "originals": [
+      "early",
+      "late"
+    ],
+    "retry_outcome": "timeout_commit",
+    "scope": "item",
+    "strategy": "reserve",
+    "ttl": 2
+  },
+  "hidden_trace": [
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "attempt": "original",
+      "keyed": true,
+      "kind": "admission",
+      "suppressed": {},
+      "t": 0,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "event": {
+        "attempt": "original",
+        "id": 1,
+        "items": [
+          "A"
+        ],
+        "kind": "effect",
+        "t": 0
+      },
+      "kind": "event",
+      "t": 0
+    },
+    {
+      "attempt": "original",
+      "items": [
+        "A"
+      ],
+      "kind": "effect",
+      "t": 0
+    },
+    {
+      "event": {
+        "id": 4,
+        "kind": "decide",
+        "t": 1
+      },
+      "kind": "event",
+      "t": 1
+    },
+    {
+      "action": {
+        "keyed": true,
+        "kind": "write",
+        "reason": "blind identical replay",
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "action",
+      "t": 1
+    },
+    {
+      "admitted": [],
+      "attempt": "r1",
+      "keyed": true,
+      "kind": "admission",
+      "suppressed": {
+        "A": "original",
+        "B": "original"
+      },
+      "t": 1,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "event": {
+        "attempt": "r1",
+        "id": 6,
+        "kind": "response",
+        "outcome": "suppressed",
+        "suppressed": {
+          "A": "original",
+          "B": "original"
+        },
+        "t": 2,
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "event",
+      "t": 2
+    },
+    {
+      "event": {
+        "id": 7,
+        "kind": "decide",
+        "t": 2
+      },
+      "kind": "event",
+      "t": 2
+    },
+    {
+      "action": {
+        "keyed": true,
+        "kind": "write",
+        "reason": "blind identical replay",
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "action",
+      "t": 2
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "attempt": "r2",
+      "keyed": true,
+      "kind": "admission",
+      "suppressed": {},
+      "t": 2,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "event": {
+        "attempt": "r2",
+        "id": 10,
+        "kind": "response",
+        "outcome": "timeout_commit",
+        "suppressed": {},
+        "t": 3,
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "event",
+      "t": 3
+    },
+    {
+      "event": {
+        "id": 11,
+        "kind": "decide",
+        "t": 3
+      },
+      "kind": "event",
+      "t": 3
+    },
+    {
+      "action": {
+        "keyed": true,
+        "kind": "write",
+        "reason": "blind identical replay",
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "action",
+      "t": 3
+    },
+    {
+      "admitted": [],
+      "attempt": "r3",
+      "keyed": true,
+      "kind": "admission",
+      "suppressed": {
+        "A": "r2",
+        "B": "r2"
+      },
+      "t": 3,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "event": {
+        "attempt": "r3",
+        "id": 13,
+        "kind": "response",
+        "outcome": "suppressed",
+        "suppressed": {
+          "A": "r2",
+          "B": "r2"
+        },
+        "t": 4,
+        "targets": [
+          "A",
+          "B"
+        ]
+      },
+      "kind": "event",
+      "t": 4
+    },
+    {
+      "event": {
+        "id": 14,
+        "kind": "decide",
+        "t": 4
+      },
+      "kind": "event",
+      "t": 4
+    },
+    {
+      "action": {
+        "kind": "stop",
+        "reason": "resource limit"
+      },
+      "kind": "action",
+      "t": 4
+    },
+    {
+      "event": {
+        "attempt": "r2",
+        "id": 8,
+        "items": [
+          "A",
+          "B"
+        ],
+        "kind": "effect",
+        "t": 5
+      },
+      "kind": "event",
+      "t": 5
+    },
+    {
+      "attempt": "r2",
+      "items": [
+        "A",
+        "B"
+      ],
+      "kind": "effect",
+      "t": 5
+    },
+    {
+      "event": {
+        "attempt": "r1",
+        "id": 5,
+        "kind": "terminal",
+        "t": 5
+      },
+      "kind": "event",
+      "t": 5
+    },
+    {
+      "attempt": "r1",
+      "kind": "terminal",
+      "t": 5
+    },
+    {
+      "event": {
+        "attempt": "r2",
+        "id": 9,
+        "kind": "terminal",
+        "t": 6
+      },
+      "kind": "event",
+      "t": 6
+    },
+    {
+      "attempt": "r2",
+      "kind": "terminal",
+      "t": 6
+    },
+    {
+      "event": {
+        "attempt": "r3",
+        "id": 12,
+        "kind": "terminal",
+        "t": 7
+      },
+      "kind": "event",
+      "t": 7
+    },
+    {
+      "attempt": "r3",
+      "kind": "terminal",
+      "t": 7
+    },
+    {
+      "event": {
+        "attempt": "original",
+        "id": 2,
+        "items": [
+          "B"
+        ],
+        "kind": "effect",
+        "t": 8
+      },
+      "kind": "event",
+      "t": 8
+    },
+    {
+      "attempt": "original",
+      "items": [
+        "B"
+      ],
+      "kind": "effect",
+      "t": 8
+    },
+    {
+      "event": {
+        "attempt": "original",
+        "id": 3,
+        "kind": "terminal",
+        "t": 9
+      },
+      "kind": "event",
+      "t": 9
+    },
+    {
+      "attempt": "original",
+      "kind": "terminal",
+      "t": 9
+    }
+  ],
+  "metrics": {
+    "actual_complete": true,
+    "calls": 3,
+    "cost": 3,
+    "counts": {
+      "A": 2,
+      "B": 2
+    },
+    "duplicate_effects": 2,
+    "duplicate_items": 2,
+    "evaluation_end": 9,
+    "horizon": 19,
+    "justified_complete": false,
+    "pending_events": 0,
+    "post_return_duplicate_effects": 2,
+    "return_reason": "resource limit",
+    "return_time": 4,
+    "unresolved": [
+      "B"
+    ]
+  },
+  "path_index": 0,
+  "policy": "blind_keyed",
+  "public_trace": [
+    {
+      "kind": "reply",
+      "reply": {
+        "attempt": "r1",
+        "outcome": "suppressed",
+        "positive": [
+          "A"
+        ],
+        "t": 2
+      },
+      "t": 2
+    },
+    {
+      "kind": "reply",
+      "reply": {
+        "attempt": "r2",
+        "outcome": "timeout_commit",
+        "positive": [],
+        "t": 3
+      },
+      "t": 3
+    },
+    {
+      "kind": "reply",
+      "reply": {
+        "attempt": "r3",
+        "outcome": "suppressed",
+        "positive": [],
+        "t": 4
+      },
+      "t": 4
+    }
+  ],
+  "scheduler_paths": 1,
+  "states_explored": 21
+}

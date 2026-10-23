@@ -1,0 +1,414 @@
+{
+  "input_sha256": {
+    "cases.json": "b3c752d5184a5444307c5e693b90e93ed0cdc10cf23ba4da9f90e951f854f14c",
+    "results-v1/group-summaries.jsonl": "63ab8bba57c0bacda44a8411db6e19d50abb33dcdb7af78eb0b663c325638974"
+  },
+  "kind": "read-only saved-group diagnostic; not a new policy experiment",
+  "loss_count": 6,
+  "losses": [
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0779",
+        "coverage": {
+          "branch_nodes": 6,
+          "coverage_hash": "a3d8f93a36f5595acc020fb8f33b2cffb3a27708310c2eb6364c509e213f41f0",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 1,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 7,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0779",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "success",
+        "scope": "item",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0779",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    },
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 3,
+        "case_id": "tight_deadline_and_budget-0780",
+        "coverage": {
+          "branch_nodes": 11,
+          "coverage_hash": "1fe8b3292361147beb7ea35550d365694ffb12398959c674c6328b0c638a4318",
+          "paths": 3
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 3,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 3,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 14,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0780",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "reject",
+        "scope": "item",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0780",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    },
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0781",
+        "coverage": {
+          "branch_nodes": 6,
+          "coverage_hash": "4d79681b9db9836ff373398a53568ce9f595190350b3c6376e340d084db5842b",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 1,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 7,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0781",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "timeout_commit",
+        "scope": "item",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0781",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    },
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0797",
+        "coverage": {
+          "branch_nodes": 6,
+          "coverage_hash": "a3d8f93a36f5595acc020fb8f33b2cffb3a27708310c2eb6364c509e213f41f0",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 1,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 7,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0797",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "success",
+        "scope": "batch",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0797",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    },
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 3,
+        "case_id": "tight_deadline_and_budget-0798",
+        "coverage": {
+          "branch_nodes": 11,
+          "coverage_hash": "1fe8b3292361147beb7ea35550d365694ffb12398959c674c6328b0c638a4318",
+          "paths": 3
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 3,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 3,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 14,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0798",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "reject",
+        "scope": "batch",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0798",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    },
+    {
+      "capability_fallback": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0799",
+        "coverage": {
+          "branch_nodes": 6,
+          "coverage_hash": "4d79681b9db9836ff373398a53568ce9f595190350b3c6376e340d084db5842b",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 1,
+        "max_calls": 1,
+        "max_return": 2,
+        "min_calls": 1,
+        "min_return": 2,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "capability_fallback",
+        "post_return_unsafe_paths": 0,
+        "states": 7,
+        "unsafe_paths": 0
+      },
+      "case": {
+        "budget": 2,
+        "deadline": 4,
+        "family": "tight_deadline_and_budget",
+        "horizon": 9,
+        "id": "tight_deadline_and_budget-0799",
+        "lag": 2,
+        "late": 3,
+        "observation": "certified",
+        "original_terminal": 4,
+        "originals": [
+          "early",
+          "early"
+        ],
+        "retry_outcome": "timeout_commit",
+        "scope": "batch",
+        "strategy": "reserve",
+        "ttl": 20
+      },
+      "horizon_aware": {
+        "actual_complete_paths": 1,
+        "case_id": "tight_deadline_and_budget-0799",
+        "coverage": {
+          "branch_nodes": 3,
+          "coverage_hash": "43f700b143ead953d576a2229d3a4a2adf2ba1785e7a510b7f42c46724426bcd",
+          "paths": 1
+        },
+        "family": "tight_deadline_and_budget",
+        "justified_complete_paths": 0,
+        "max_calls": 0,
+        "max_return": 1,
+        "min_calls": 0,
+        "min_return": 1,
+        "omniscient_feasible": true,
+        "paths": 1,
+        "policy": "horizon_aware",
+        "post_return_unsafe_paths": 0,
+        "states": 4,
+        "unsafe_paths": 0
+      }
+    }
+  ],
+  "structural_family_count": 1,
+  "structural_pattern": {
+    "budget": 2,
+    "deadline": 4,
+    "family": "tight_deadline_and_budget",
+    "lag": 2,
+    "observation": "certified",
+    "original_terminal": 4,
+    "originals": [
+      "early",
+      "early"
+    ],
+    "strategy": "reserve",
+    "ttl": 20
+  },
+  "varying_dimensions": {
+    "retry_outcome": [
+      "reject",
+      "success",
+      "timeout_commit"
+    ],
+    "scope": [
+      "batch",
+      "item"
+    ]
+  }
+}

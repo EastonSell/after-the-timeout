@@ -1,0 +1,25 @@
+{
+  "admission_deadline": 10,
+  "all_safe_mutations_suppressed": true,
+  "allowed_action_alphabet": [
+    "wait to an integer tick",
+    "read unavailable status",
+    "write A/B/AB using original keys or keyless",
+    "stop"
+  ],
+  "call_budget": 3,
+  "evaluation_horizon": 15,
+  "examined_first_mutation_choices": 60,
+  "imports_simulator": false,
+  "label": "Post-hoc bounded two-world safe-action closure, not part of the frozen 800-case test",
+  "no_robust_safe_completion_for_this_pair": true,
+  "read_cost": 1,
+  "read_latency": 1,
+  "reservation_valid_interval": "[0,2)",
+  "safe_action_closure_explanation": "Only keyed t=1 writes are safe in both worlds. They are suppressed and reply at t=2 with identical positives. They create no new reservation/effect. All later writes duplicate an item in at least one world; unavailable reads and waits cannot distinguish or change the worlds. Therefore a policy safe in both cannot complete B in the never world.",
+  "safe_first_mutation_choices": 3,
+  "safe_observations_identical": true,
+  "sequential_client": true,
+  "suppressed_reply_latency": 1,
+  "write_cost": 1
+}

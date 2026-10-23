@@ -1,0 +1,32 @@
+[
+  {
+    "id": "P1",
+    "passed": true,
+    "required": true
+  },
+  {
+    "id": "P2",
+    "passed": true,
+    "required": true
+  },
+  {
+    "id": "P3",
+    "passed": true,
+    "required": true
+  },
+  {
+    "id": "P4",
+    "passed": true,
+    "required": true
+  },
+  {
+    "id": "P5",
+    "passed": false,
+    "required": false
+  },
+  {
+    "id": "P6",
+    "passed": true,
+    "required": false
+  }
+]

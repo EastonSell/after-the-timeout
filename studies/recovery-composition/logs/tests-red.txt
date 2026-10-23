@@ -1,0 +1,123 @@
+test_batch_cache_suppression_does_not_fill_missing (test_model.ContractTests.test_batch_cache_suppression_does_not_fill_missing) ... FAIL
+test_cache_without_reservation_admits_concurrent_duplicate (test_model.ContractTests.test_cache_without_reservation_admits_concurrent_duplicate) ... FAIL
+test_checker_rejects_deleted_effect (test_model.ContractTests.test_checker_rejects_deleted_effect) ... FAIL
+test_cost_budget_and_terminal_horizon (test_model.ContractTests.test_cost_budget_and_terminal_horizon) ... FAIL
+test_effect_observation_ties_include_both_orders (test_model.ContractTests.test_effect_observation_ties_include_both_orders) ... FAIL
+test_expiry_does_not_cancel_original_owner (test_model.ContractTests.test_expiry_does_not_cancel_original_owner) ... FAIL
+test_grid_and_heldout_are_disjoint_named_families (test_model.ContractTests.test_grid_and_heldout_are_disjoint_named_families) ... FAIL
+test_horizon_policy_safe_through_all_pending_events (test_model.ContractTests.test_horizon_policy_safe_through_all_pending_events) ... FAIL
+test_independent_checker_accepts_then_rejects_tampered_cost (test_model.ContractTests.test_independent_checker_accepts_then_rejects_tampered_cost) ... FAIL
+test_oracle_is_information_bound_not_policy (test_model.ContractTests.test_oracle_is_information_bound_not_policy) ... FAIL
+test_public_action_function_does_not_receive_hidden_case (test_model.ContractTests.test_public_action_function_does_not_receive_hidden_case) ... ok
+test_reservation_prevents_concurrent_replay (test_model.ContractTests.test_reservation_prevents_concurrent_replay) ... FAIL
+test_retry_failure_not_reported_complete (test_model.ContractTests.test_retry_failure_not_reported_complete) ... FAIL
+test_stale_missing_is_not_terminal_noncommit (test_model.ContractTests.test_stale_missing_is_not_terminal_noncommit) ... FAIL
+
+======================================================================
+FAIL: test_batch_cache_suppression_does_not_fill_missing (test_model.ContractTests.test_batch_cache_suppression_does_not_fill_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 59, in test_batch_cache_suppression_does_not_fill_missing
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_cache_without_reservation_admits_concurrent_duplicate (test_model.ContractTests.test_cache_without_reservation_admits_concurrent_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 26, in test_cache_without_reservation_admits_concurrent_duplicate
+    self.assertTrue(any(r['metrics']['duplicate_effects'] for r in rows))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_checker_rejects_deleted_effect (test_model.ContractTests.test_checker_rejects_deleted_effect)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 84, in test_checker_rejects_deleted_effect
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_cost_budget_and_terminal_horizon (test_model.ContractTests.test_cost_budget_and_terminal_horizon)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 71, in test_cost_budget_and_terminal_horizon
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_effect_observation_ties_include_both_orders (test_model.ContractTests.test_effect_observation_ties_include_both_orders)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 40, in test_effect_observation_ties_include_both_orders
+    self.assertIn(('A',), seen)
+AssertionError: ('A',) not found in set()
+
+======================================================================
+FAIL: test_expiry_does_not_cancel_original_owner (test_model.ContractTests.test_expiry_does_not_cancel_original_owner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 30, in test_expiry_does_not_cancel_original_owner
+    self.assertTrue(any(r['metrics']['duplicate_effects'] for r in rows))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_grid_and_heldout_are_disjoint_named_families (test_model.ContractTests.test_grid_and_heldout_are_disjoint_named_families)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 98, in test_grid_and_heldout_are_disjoint_named_families
+    self.assertTrue(cases)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_horizon_policy_safe_through_all_pending_events (test_model.ContractTests.test_horizon_policy_safe_through_all_pending_events)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 48, in test_horizon_policy_safe_through_all_pending_events
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_independent_checker_accepts_then_rejects_tampered_cost (test_model.ContractTests.test_independent_checker_accepts_then_rejects_tampered_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 77, in test_independent_checker_accepts_then_rejects_tampered_cost
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_oracle_is_information_bound_not_policy (test_model.ContractTests.test_oracle_is_information_bound_not_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 92, in test_oracle_is_information_bound_not_policy
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_reservation_prevents_concurrent_replay (test_model.ContractTests.test_reservation_prevents_concurrent_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 21, in test_reservation_prevents_concurrent_replay
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_retry_failure_not_reported_complete (test_model.ContractTests.test_retry_failure_not_reported_complete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 54, in test_retry_failure_not_reported_complete
+    self.assertTrue(rows)
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_stale_missing_is_not_terminal_noncommit (test_model.ContractTests.test_stale_missing_is_not_terminal_noncommit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<study-root>/tests/test_model.py", line 34, in test_stale_missing_is_not_terminal_noncommit
+    self.assertTrue(any(r['metrics']['duplicate_effects'] for r in rows))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+FAILED (failures=13)

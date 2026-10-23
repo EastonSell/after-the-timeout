@@ -53,6 +53,10 @@ The [capability catalog](docs/public-capabilities.md) separates tool discovery, 
 
 Original public skills cover [uncertain writes](skills/recover-uncertain-operation/SKILL.md), [partial batches](skills/recover-partial-batch/SKILL.md), [checkpoint handoffs](skills/checkpoint-handoff/SKILL.md), [evidence retention](skills/retain-experiment-evidence/SKILL.md), [release validation](skills/release-validation/README.md) and [plain language](skills/plain-language/SKILL.md). Their format, fixture and software checks are recorded separately from behavioral efficacy.
 
-Next work should combine late execution, key expiry and partial commits, then compare model-assisted recovery under fixed budgets. Measure duplicates, actual completion, justified completion reports, unresolved outcomes and cost separately. [The overview](docs/RESEARCH_OVERVIEW.md) explains the design.
+Next work should compare model-assisted recovery under controlled observation, action and cost budgets, then test broader service contracts. Measure duplicates, actual completion, justified completion reports, unresolved outcomes and cost separately. [The overview](docs/RESEARCH_OVERVIEW.md) explains the design.
 
 Original code, skills, documentation and synthetic results are [MIT licensed](LICENSE). Linked standards and papers retain their copyrights. The catalog describes public interfaces rather than anyone's account access.
+
+## Recovery composition study
+
+[Complete scheduler-path evidence and bounded recovery analysis](studies/recovery-composition/README.md) retain the failed completion prediction P5 and show no composed-policy superiority: the adequate single-operation policy justifies 423 cases versus 417 for the composed policy. The six losses instantiate one structural defect, not six independent discoveries. Supplementary impossibility reasoning is limited to its declared action alphabet, and cache semantics are model-specific. These are offline contract-model results, not real API or agent-behavior guarantees.

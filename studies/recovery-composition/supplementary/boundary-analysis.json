@@ -1,0 +1,20 @@
+{
+  "boundary": {
+    "all_paths_actual_complete": true,
+    "cases": 452,
+    "condition": "certified status; successful or timeout-committing retry; budget >= 3; action deadline >= original_terminal + lag + 1; frozen horizon drains all pending effects",
+    "label": "Post-hoc conditional completion boundary, not a preregistered superiority test",
+    "scope": "Finite enumerated cases; analytic argument is bounded by the frozen service semantics.",
+    "terminal_paths": 2533
+  },
+  "comparison_warning": "Same exogenous case and budget; different policy-induced scheduler trees, so ranges are not paired path estimates.",
+  "comparisons": {
+    "baseline_strictly_slower_all_orders": 108,
+    "horizon_guaranteed_justification_loss": 6,
+    "horizon_higher_worst_call_envelope": 0,
+    "horizon_lower_worst_call_envelope": 108,
+    "horizon_possible_completion_gain": 8,
+    "horizon_strictly_slower_all_orders": 18,
+    "same_worst_call_envelope": 692
+  }
+}

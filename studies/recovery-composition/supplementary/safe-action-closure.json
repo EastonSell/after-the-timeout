@@ -1,0 +1,1328 @@
+{
+  "admission_deadline": 10,
+  "all_safe_mutations_suppressed": true,
+  "allowed_action_alphabet": [
+    "wait to an integer tick",
+    "read unavailable status",
+    "write A/B/AB using original keys or keyless",
+    "stop"
+  ],
+  "call_budget": 3,
+  "evaluation_horizon": 15,
+  "examined_first_mutation_choices": 60,
+  "imports_simulator": false,
+  "label": "Post-hoc bounded two-world safe-action closure, not part of the frozen 800-case test",
+  "no_robust_safe_completion_for_this_pair": true,
+  "read_cost": 1,
+  "read_latency": 1,
+  "reservation_valid_interval": "[0,2)",
+  "rows": [
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 1,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "safe_in_both": true,
+      "safe_reply_left": [
+        "A"
+      ],
+      "safe_reply_right": [
+        "A"
+      ],
+      "t": 1,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 1,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "safe_in_both": true,
+      "safe_reply_left": [],
+      "safe_reply_right": [],
+      "t": 1,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 1,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "safe_in_both": true,
+      "safe_reply_left": [
+        "A"
+      ],
+      "safe_reply_right": [
+        "A"
+      ],
+      "t": 1,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 2,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 3,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 4,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 5,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 6,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 7,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 8,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 9,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "A"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 0
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "A"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 1,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 1,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": false,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "admitted": [
+        "A",
+        "B"
+      ],
+      "keyed": true,
+      "left_counts": {
+        "A": 2,
+        "B": 1
+      },
+      "right_counts": {
+        "A": 2,
+        "B": 2
+      },
+      "safe_in_both": false,
+      "safe_reply_left": null,
+      "safe_reply_right": null,
+      "t": 10,
+      "targets": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  "safe_action_closure_explanation": "Only keyed t=1 writes are safe in both worlds. They are suppressed and reply at t=2 with identical positives. They create no new reservation/effect. All later writes duplicate an item in at least one world; unavailable reads and waits cannot distinguish or change the worlds. Therefore a policy safe in both cannot complete B in the never world.",
+  "safe_first_mutation_choices": 3,
+  "safe_observations_identical": true,
+  "sequential_client": true,
+  "suppressed_reply_latency": 1,
+  "write_cost": 1
+}
