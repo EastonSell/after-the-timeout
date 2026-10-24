@@ -1,0 +1,45 @@
+{
+  "title": "After The Timeout",
+  "repo": "after-the-timeout",
+  "legacy_class": "RetryIdempotency",
+  "segments": [
+    {
+      "id": "beat-1",
+      "start": 0.0,
+      "end": 11.733333333333333,
+      "text": "You send a request, then the reply disappears. In this example, the service already committed the write. The caller sees a timeout, but can't see that hidden outcome.",
+      "visual": "Send request; commit effect; lose reply. Explicit evaluator-only label on effect.",
+      "chapter": "The example",
+      "frames": 352
+    },
+    {
+      "id": "beat-2",
+      "start": 11.733333333333333,
+      "end": 24.566666666666666,
+      "text": "The same timeout could also mean nothing committed. Those two histories look identical to the caller. A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+      "visual": "Split into zero-commit and one-commit histories with identical caller timeout.",
+      "chapter": "What changes",
+      "frames": 385
+    },
+    {
+      "id": "beat-3",
+      "start": 24.566666666666666,
+      "end": 40.7,
+      "text": "Now retry the same request ID. With no deduplication, this toy produces two effects. A retained, durable, payload-bound key prevents the duplicate here. If the key has expired, the duplicate can return.",
+      "visual": "Reveal no-dedup, retained durable payload-bound key, expired key rows sequentially. Animate effects per narration.",
+      "chapter": "The mechanism",
+      "frames": 484
+    },
+    {
+      "id": "beat-4",
+      "start": 40.7,
+      "end": 56.06666666666667,
+      "text": "This is an atomic, sequential toy with no late original request. Real recovery also depends on freshness, expiry, and in-flight work. When the evidence can't settle the outcome, preserve unknown.",
+      "visual": "Scope card: atomic / sequential / no late original, then preserve unknown.",
+      "chapter": "What this establishes",
+      "frames": 461
+    }
+  ],
+  "fps": 30,
+  "duration": 56.06666666666667
+}

@@ -1,0 +1,1298 @@
+{
+  "method": "Independent automatic speech recognition; no listening claim; no text prompt supplied. FFmpeg decodes WAV to mono float32 at 16 kHz for Whisper input.",
+  "model": "Systran/faster-whisper-small.en",
+  "model_source": "https://huggingface.co/Systran/faster-whisper-small.en",
+  "options": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 6,
+    "beam_size": 5,
+    "language": "en",
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "initial_prompt": null
+  },
+  "limitations": "ASR transcription is fallible and does not establish prosody, naturalness, or exact pronunciation. Text differences require interpretation, not automatic failure.",
+  "clips": [
+    {
+      "repo": "after-the-timeout",
+      "id": "beat-1",
+      "sha256_before": "8bd054feaf86aa2a0998fffaf85f44d83767b4bb67d3adbf21a36363b931b723",
+      "manifest_sha256": "df4800c002c464e713d5bbe6f34f77162ee1391f1a45cc8537e411d8d3f7b57f",
+      "canonical_text": "You send a request, then the reply disappears. In this example, the service already committed the write. The caller sees a timeout, but can't see that hidden outcome.",
+      "tts_text": "You send a request, then the reply disappears. In this example, the service already committed the write. The caller sees a timeout, but can't see that hidden outcome.",
+      "has_tts_override": false,
+      "cache_metadata": {
+        "cache_key": "1a1398bd8322be20c6ae6fa4b386790473719345c78c2f48b69496685caf7b86",
+        "audio_sha256": "8bd054feaf86aa2a0998fffaf85f44d83767b4bb67d3adbf21a36363b931b723",
+        "parameters": {
+          "tts_text": "You send a request, then the reply disappears. In this example, the service already committed the write. The caller sees a timeout, but can't see that hidden outcome.",
+          "voice": "am_michael",
+          "language": "en-us",
+          "speed": 0.95,
+          "lead_in": 0.12,
+          "tail_out": 0.5
+        },
+        "engine": {
+          "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+          "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+          "kokoro_onnx_version": "0.6.1",
+          "cache_version": 1
+        }
+      },
+      "audio_info": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "frames": 281120,
+        "duration_seconds": 11.713333333333333
+      },
+      "transcription": "You send a request, then the reply disappears. In this example, the service already committed the right. The caller sees a timeout but can't see that hidden outcome.",
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 3.12,
+          "text": " You send a request, then the reply disappears.",
+          "tokens": [
+            50363,
+            921,
+            3758,
+            257,
+            2581,
+            11,
+            788,
+            262,
+            10971,
+            27934,
+            13,
+            50555
+          ],
+          "avg_logprob": -0.19909374597595958,
+          "compression_ratio": 1.3095238095238095,
+          "no_speech_prob": 0.0014234306290745735,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.3,
+              "word": " You",
+              "probability": 0.7435511350631714
+            },
+            {
+              "start": 0.3,
+              "end": 0.56,
+              "word": " send",
+              "probability": 0.997220516204834
+            },
+            {
+              "start": 0.56,
+              "end": 0.72,
+              "word": " a",
+              "probability": 0.9951693415641785
+            },
+            {
+              "start": 0.72,
+              "end": 1.18,
+              "word": " request,",
+              "probability": 0.9928491115570068
+            },
+            {
+              "start": 1.62,
+              "end": 1.84,
+              "word": " then",
+              "probability": 0.9966259002685547
+            },
+            {
+              "start": 1.84,
+              "end": 2.0,
+              "word": " the",
+              "probability": 0.9942010045051575
+            },
+            {
+              "start": 2.0,
+              "end": 2.46,
+              "word": " reply",
+              "probability": 0.9958568215370178
+            },
+            {
+              "start": 2.46,
+              "end": 3.12,
+              "word": " disappears.",
+              "probability": 0.9994465708732605
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.9,
+          "end": 6.7,
+          "text": " In this example, the service already committed the right.",
+          "tokens": [
+            50555,
+            554,
+            428,
+            1672,
+            11,
+            262,
+            2139,
+            1541,
+            5364,
+            262,
+            826,
+            13,
+            50723
+          ],
+          "avg_logprob": -0.19909374597595958,
+          "compression_ratio": 1.3095238095238095,
+          "no_speech_prob": 0.0014234306290745735,
+          "words": [
+            {
+              "start": 3.9,
+              "end": 4.06,
+              "word": " In",
+              "probability": 0.9957211017608643
+            },
+            {
+              "start": 4.06,
+              "end": 4.24,
+              "word": " this",
+              "probability": 0.9994699358940125
+            },
+            {
+              "start": 4.24,
+              "end": 4.64,
+              "word": " example,",
+              "probability": 0.9991527795791626
+            },
+            {
+              "start": 4.86,
+              "end": 4.96,
+              "word": " the",
+              "probability": 0.9984900951385498
+            },
+            {
+              "start": 4.96,
+              "end": 5.3,
+              "word": " service",
+              "probability": 0.9663563370704651
+            },
+            {
+              "start": 5.3,
+              "end": 5.76,
+              "word": " already",
+              "probability": 0.9968485236167908
+            },
+            {
+              "start": 5.76,
+              "end": 6.18,
+              "word": " committed",
+              "probability": 0.9936229586601257
+            },
+            {
+              "start": 6.18,
+              "end": 6.42,
+              "word": " the",
+              "probability": 0.9976611137390137
+            },
+            {
+              "start": 6.42,
+              "end": 6.7,
+              "word": " right.",
+              "probability": 0.89761883020401
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.3,
+          "end": 11.0,
+          "text": " The caller sees a timeout but can't see that hidden outcome.",
+          "tokens": [
+            50723,
+            383,
+            24955,
+            7224,
+            257,
+            26827,
+            475,
+            460,
+            470,
+            766,
+            326,
+            7104,
+            8055,
+            13,
+            50943
+          ],
+          "avg_logprob": -0.19909374597595958,
+          "compression_ratio": 1.3095238095238095,
+          "no_speech_prob": 0.0014234306290745735,
+          "words": [
+            {
+              "start": 7.3,
+              "end": 7.48,
+              "word": " The",
+              "probability": 0.9956680536270142
+            },
+            {
+              "start": 7.48,
+              "end": 7.78,
+              "word": " caller",
+              "probability": 0.9963514804840088
+            },
+            {
+              "start": 7.78,
+              "end": 8.16,
+              "word": " sees",
+              "probability": 0.9967579245567322
+            },
+            {
+              "start": 8.16,
+              "end": 8.38,
+              "word": " a",
+              "probability": 0.9980990290641785
+            },
+            {
+              "start": 8.38,
+              "end": 8.8,
+              "word": " timeout",
+              "probability": 0.7470703721046448
+            },
+            {
+              "start": 8.8,
+              "end": 9.18,
+              "word": " but",
+              "probability": 0.5685213208198547
+            },
+            {
+              "start": 9.18,
+              "end": 9.6,
+              "word": " can't",
+              "probability": 0.991068571805954
+            },
+            {
+              "start": 9.6,
+              "end": 9.86,
+              "word": " see",
+              "probability": 0.9989769458770752
+            },
+            {
+              "start": 9.86,
+              "end": 10.12,
+              "word": " that",
+              "probability": 0.9904270172119141
+            },
+            {
+              "start": 10.12,
+              "end": 10.42,
+              "word": " hidden",
+              "probability": 0.9968975782394409
+            },
+            {
+              "start": 10.42,
+              "end": 11.0,
+              "word": " outcome.",
+              "probability": 0.9952760934829712
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "differences_vs_canonical": [
+        {
+          "operation": "replace",
+          "expected": "write",
+          "recognized": "right"
+        }
+      ],
+      "differences_vs_tts": [
+        {
+          "operation": "replace",
+          "expected": "write",
+          "recognized": "right"
+        }
+      ],
+      "sha256_after": "8bd054feaf86aa2a0998fffaf85f44d83767b4bb67d3adbf21a36363b931b723",
+      "wav_unchanged_during_asr": true,
+      "asr_elapsed_seconds": 2.733775648000119,
+      "sha256_final_recheck": "8bd054feaf86aa2a0998fffaf85f44d83767b4bb67d3adbf21a36363b931b723",
+      "cache_hash_matches": true,
+      "cache_tts_text_matches": true
+    },
+    {
+      "repo": "after-the-timeout",
+      "id": "beat-2",
+      "sha256_before": "ab8a1a6218da685c895782594eacfec473a584af735862298c699509b5e5c695",
+      "manifest_sha256": "df4800c002c464e713d5bbe6f34f77162ee1391f1a45cc8537e411d8d3f7b57f",
+      "canonical_text": "The same timeout could also mean nothing committed. Those two histories look identical to the caller. A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+      "tts_text": "The same timeout could also mean nothing committed. Those two histories look identical to the caller. A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+      "has_tts_override": false,
+      "cache_metadata": {
+        "cache_key": "6af7d9b27bf9c8bc5188912c9b8e0b0ee55875227ef76e1a57b585727c9f6c1a",
+        "audio_sha256": "ab8a1a6218da685c895782594eacfec473a584af735862298c699509b5e5c695",
+        "parameters": {
+          "tts_text": "The same timeout could also mean nothing committed. Those two histories look identical to the caller. A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+          "voice": "am_michael",
+          "language": "en-us",
+          "speed": 0.95,
+          "lead_in": 0.12,
+          "tail_out": 0.5
+        },
+        "engine": {
+          "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+          "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+          "kokoro_onnx_version": "0.6.1",
+          "cache_version": 1
+        }
+      },
+      "audio_info": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "frames": 307744,
+        "duration_seconds": 12.822666666666667
+      },
+      "transcription": "The same timeout could also mean nothing committed. Those two histories look identical to the caller. A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.96,
+          "text": " The same timeout could also mean nothing committed.",
+          "tokens": [
+            50363,
+            383,
+            976,
+            26827,
+            714,
+            635,
+            1612,
+            2147,
+            5364,
+            13,
+            50538
+          ],
+          "avg_logprob": -0.22252222170700897,
+          "compression_ratio": 1.34375,
+          "no_speech_prob": 0.0028110214043408632,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.28,
+              "word": " The",
+              "probability": 0.9213008284568787
+            },
+            {
+              "start": 0.28,
+              "end": 0.62,
+              "word": " same",
+              "probability": 0.9983575940132141
+            },
+            {
+              "start": 0.62,
+              "end": 1.18,
+              "word": " timeout",
+              "probability": 0.44121360778808594
+            },
+            {
+              "start": 1.18,
+              "end": 1.42,
+              "word": " could",
+              "probability": 0.986005425453186
+            },
+            {
+              "start": 1.42,
+              "end": 1.74,
+              "word": " also",
+              "probability": 0.9969199895858765
+            },
+            {
+              "start": 1.74,
+              "end": 2.08,
+              "word": " mean",
+              "probability": 0.9987115859985352
+            },
+            {
+              "start": 2.08,
+              "end": 2.46,
+              "word": " nothing",
+              "probability": 0.9957139492034912
+            },
+            {
+              "start": 2.46,
+              "end": 2.96,
+              "word": " committed.",
+              "probability": 0.9965517520904541
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.72,
+          "end": 6.44,
+          "text": " Those two histories look identical to the caller.",
+          "tokens": [
+            50538,
+            5845,
+            734,
+            25985,
+            804,
+            10411,
+            284,
+            262,
+            24955,
+            13,
+            50713
+          ],
+          "avg_logprob": -0.22252222170700897,
+          "compression_ratio": 1.34375,
+          "no_speech_prob": 0.0028110214043408632,
+          "words": [
+            {
+              "start": 3.72,
+              "end": 3.86,
+              "word": " Those",
+              "probability": 0.9962640404701233
+            },
+            {
+              "start": 3.86,
+              "end": 4.16,
+              "word": " two",
+              "probability": 0.9917320013046265
+            },
+            {
+              "start": 4.16,
+              "end": 4.68,
+              "word": " histories",
+              "probability": 0.9982951283454895
+            },
+            {
+              "start": 4.68,
+              "end": 5.04,
+              "word": " look",
+              "probability": 0.9983658194541931
+            },
+            {
+              "start": 5.04,
+              "end": 5.6,
+              "word": " identical",
+              "probability": 0.9991507530212402
+            },
+            {
+              "start": 5.6,
+              "end": 5.94,
+              "word": " to",
+              "probability": 0.9991706609725952
+            },
+            {
+              "start": 5.94,
+              "end": 6.12,
+              "word": " the",
+              "probability": 0.9972200393676758
+            },
+            {
+              "start": 6.12,
+              "end": 6.44,
+              "word": " caller.",
+              "probability": 0.9964147806167603
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.14,
+          "end": 11.84,
+          "text": " A missing or stale lookup doesn't necessarily resolve the uncertainty.",
+          "tokens": [
+            50713,
+            317,
+            4814,
+            393,
+            39985,
+            35847,
+            1595,
+            470,
+            6646,
+            10568,
+            262,
+            13479,
+            13,
+            50988
+          ],
+          "avg_logprob": -0.22252222170700897,
+          "compression_ratio": 1.34375,
+          "no_speech_prob": 0.0028110214043408632,
+          "words": [
+            {
+              "start": 7.14,
+              "end": 7.32,
+              "word": " A",
+              "probability": 0.9952669143676758
+            },
+            {
+              "start": 7.32,
+              "end": 7.68,
+              "word": " missing",
+              "probability": 0.9864823818206787
+            },
+            {
+              "start": 7.68,
+              "end": 8.26,
+              "word": " or",
+              "probability": 0.8247648477554321
+            },
+            {
+              "start": 8.26,
+              "end": 8.72,
+              "word": " stale",
+              "probability": 0.9639419913291931
+            },
+            {
+              "start": 8.72,
+              "end": 9.22,
+              "word": " lookup",
+              "probability": 0.5971745252609253
+            },
+            {
+              "start": 9.22,
+              "end": 9.82,
+              "word": " doesn't",
+              "probability": 0.993497371673584
+            },
+            {
+              "start": 9.82,
+              "end": 10.34,
+              "word": " necessarily",
+              "probability": 0.9890689253807068
+            },
+            {
+              "start": 10.34,
+              "end": 11.1,
+              "word": " resolve",
+              "probability": 0.9973416924476624
+            },
+            {
+              "start": 11.1,
+              "end": 11.4,
+              "word": " the",
+              "probability": 0.9986248016357422
+            },
+            {
+              "start": 11.4,
+              "end": 11.84,
+              "word": " uncertainty.",
+              "probability": 0.9992949962615967
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "differences_vs_canonical": [],
+      "differences_vs_tts": [],
+      "sha256_after": "ab8a1a6218da685c895782594eacfec473a584af735862298c699509b5e5c695",
+      "wav_unchanged_during_asr": true,
+      "asr_elapsed_seconds": 2.551055043999895,
+      "sha256_final_recheck": "ab8a1a6218da685c895782594eacfec473a584af735862298c699509b5e5c695",
+      "cache_hash_matches": true,
+      "cache_tts_text_matches": true
+    },
+    {
+      "repo": "after-the-timeout",
+      "id": "beat-3",
+      "sha256_before": "dbf59e44ba2676c0191fb259c0542f0b3a186f6f61129bcd7a6a525b4a2457e5",
+      "manifest_sha256": "df4800c002c464e713d5bbe6f34f77162ee1391f1a45cc8537e411d8d3f7b57f",
+      "canonical_text": "Now retry the same request ID. With no deduplication, this toy produces two effects. A retained, durable, payload-bound key prevents the duplicate here. If the key has expired, the duplicate can return.",
+      "tts_text": "Now retry the same request ID. With no deduplication, this toy produces two effects. A retained, durable, payload-bound key prevents the duplicate here. If the key has expired, the duplicate can return.",
+      "has_tts_override": false,
+      "cache_metadata": {
+        "cache_key": "398685aed6ba6c61dfc704b89b83c35d4a241ac814401b423f2ee57cdea55052",
+        "audio_sha256": "dbf59e44ba2676c0191fb259c0542f0b3a186f6f61129bcd7a6a525b4a2457e5",
+        "parameters": {
+          "tts_text": "Now retry the same request ID. With no deduplication, this toy produces two effects. A retained, durable, payload-bound key prevents the duplicate here. If the key has expired, the duplicate can return.",
+          "voice": "am_michael",
+          "language": "en-us",
+          "speed": 0.95,
+          "lead_in": 0.12,
+          "tail_out": 0.5
+        },
+        "engine": {
+          "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+          "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+          "kokoro_onnx_version": "0.6.1",
+          "cache_version": 1
+        }
+      },
+      "audio_info": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "frames": 387104,
+        "duration_seconds": 16.129333333333335
+      },
+      "transcription": "Now retry the same request ID. With no deduplication, this toy produces two effects. A retained, durable, payload-bound key prevents the duplicate here. If the key has expired, the duplicate can return.",
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.44,
+          "text": " Now retry the same request ID.",
+          "tokens": [
+            50363,
+            2735,
+            1005,
+            563,
+            262,
+            976,
+            2581,
+            4522,
+            13,
+            50513
+          ],
+          "avg_logprob": -0.13461835872043262,
+          "compression_ratio": 1.393103448275862,
+          "no_speech_prob": 0.0009507831418886781,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.4,
+              "word": " Now",
+              "probability": 0.9705115556716919
+            },
+            {
+              "start": 0.4,
+              "end": 0.94,
+              "word": " retry",
+              "probability": 0.922699362039566
+            },
+            {
+              "start": 0.94,
+              "end": 1.16,
+              "word": " the",
+              "probability": 0.9971965551376343
+            },
+            {
+              "start": 1.16,
+              "end": 1.48,
+              "word": " same",
+              "probability": 0.9960533380508423
+            },
+            {
+              "start": 1.48,
+              "end": 1.88,
+              "word": " request",
+              "probability": 0.6799140572547913
+            },
+            {
+              "start": 1.88,
+              "end": 2.44,
+              "word": " ID.",
+              "probability": 0.7739487290382385
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 3.22,
+          "end": 6.36,
+          "text": " With no deduplication, this toy produces two effects.",
+          "tokens": [
+            50513,
+            2080,
+            645,
+            4648,
+            84,
+            489,
+            3299,
+            11,
+            428,
+            13373,
+            11073,
+            734,
+            3048,
+            13,
+            50713
+          ],
+          "avg_logprob": -0.13461835872043262,
+          "compression_ratio": 1.393103448275862,
+          "no_speech_prob": 0.0009507831418886781,
+          "words": [
+            {
+              "start": 3.22,
+              "end": 3.34,
+              "word": " With",
+              "probability": 0.9934940934181213
+            },
+            {
+              "start": 3.34,
+              "end": 3.62,
+              "word": " no",
+              "probability": 0.9956666231155396
+            },
+            {
+              "start": 3.62,
+              "end": 4.34,
+              "word": " deduplication,",
+              "probability": 0.9783030301332474
+            },
+            {
+              "start": 4.56,
+              "end": 4.72,
+              "word": " this",
+              "probability": 0.9966129660606384
+            },
+            {
+              "start": 4.72,
+              "end": 5.02,
+              "word": " toy",
+              "probability": 0.996209979057312
+            },
+            {
+              "start": 5.02,
+              "end": 5.54,
+              "word": " produces",
+              "probability": 0.9977467656135559
+            },
+            {
+              "start": 5.54,
+              "end": 5.88,
+              "word": " two",
+              "probability": 0.9002229571342468
+            },
+            {
+              "start": 5.88,
+              "end": 6.36,
+              "word": " effects.",
+              "probability": 0.9948176741600037
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 7.08,
+          "end": 11.74,
+          "text": " A retained, durable, payload-bound key prevents the duplicate here.",
+          "tokens": [
+            50713,
+            317,
+            17383,
+            11,
+            20923,
+            11,
+            21437,
+            12,
+            7784,
+            1994,
+            15174,
+            262,
+            23418,
+            994,
+            13,
+            50963
+          ],
+          "avg_logprob": -0.13461835872043262,
+          "compression_ratio": 1.393103448275862,
+          "no_speech_prob": 0.0009507831418886781,
+          "words": [
+            {
+              "start": 7.08,
+              "end": 7.18,
+              "word": " A",
+              "probability": 0.9884337782859802
+            },
+            {
+              "start": 7.18,
+              "end": 7.8,
+              "word": " retained,",
+              "probability": 0.9752183556556702
+            },
+            {
+              "start": 7.98,
+              "end": 8.6,
+              "word": " durable,",
+              "probability": 0.9993207454681396
+            },
+            {
+              "start": 8.98,
+              "end": 9.32,
+              "word": " payload",
+              "probability": 0.9923997521400452
+            },
+            {
+              "start": 9.32,
+              "end": 9.72,
+              "word": "-bound",
+              "probability": 0.8226122856140137
+            },
+            {
+              "start": 9.72,
+              "end": 10.16,
+              "word": " key",
+              "probability": 0.9892358183860779
+            },
+            {
+              "start": 10.16,
+              "end": 10.6,
+              "word": " prevents",
+              "probability": 0.9943915009498596
+            },
+            {
+              "start": 10.6,
+              "end": 10.86,
+              "word": " the",
+              "probability": 0.9993398785591125
+            },
+            {
+              "start": 10.86,
+              "end": 11.2,
+              "word": " duplicate",
+              "probability": 0.9870031476020813
+            },
+            {
+              "start": 11.2,
+              "end": 11.74,
+              "word": " here.",
+              "probability": 0.9577069878578186
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "start": 12.16,
+          "end": 15.32,
+          "text": " If the key has expired, the duplicate can return.",
+          "tokens": [
+            50963,
+            1002,
+            262,
+            1994,
+            468,
+            21350,
+            11,
+            262,
+            23418,
+            460,
+            1441,
+            13,
+            51163
+          ],
+          "avg_logprob": -0.13461835872043262,
+          "compression_ratio": 1.393103448275862,
+          "no_speech_prob": 0.0009507831418886781,
+          "words": [
+            {
+              "start": 12.16,
+              "end": 12.38,
+              "word": " If",
+              "probability": 0.9971082806587219
+            },
+            {
+              "start": 12.38,
+              "end": 12.56,
+              "word": " the",
+              "probability": 0.9971211552619934
+            },
+            {
+              "start": 12.56,
+              "end": 12.8,
+              "word": " key",
+              "probability": 0.9985976815223694
+            },
+            {
+              "start": 12.8,
+              "end": 13.02,
+              "word": " has",
+              "probability": 0.9980996251106262
+            },
+            {
+              "start": 13.02,
+              "end": 13.58,
+              "word": " expired,",
+              "probability": 0.9987444877624512
+            },
+            {
+              "start": 14.0,
+              "end": 14.06,
+              "word": " the",
+              "probability": 0.9988594055175781
+            },
+            {
+              "start": 14.06,
+              "end": 14.52,
+              "word": " duplicate",
+              "probability": 0.9977083206176758
+            },
+            {
+              "start": 14.52,
+              "end": 14.84,
+              "word": " can",
+              "probability": 0.998087465763092
+            },
+            {
+              "start": 14.84,
+              "end": 15.32,
+              "word": " return.",
+              "probability": 0.9992127418518066
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "differences_vs_canonical": [],
+      "differences_vs_tts": [],
+      "sha256_after": "dbf59e44ba2676c0191fb259c0542f0b3a186f6f61129bcd7a6a525b4a2457e5",
+      "wav_unchanged_during_asr": true,
+      "asr_elapsed_seconds": 3.191768445999969,
+      "sha256_final_recheck": "dbf59e44ba2676c0191fb259c0542f0b3a186f6f61129bcd7a6a525b4a2457e5",
+      "cache_hash_matches": true,
+      "cache_tts_text_matches": true
+    },
+    {
+      "repo": "after-the-timeout",
+      "id": "beat-4",
+      "sha256_before": "e103008ca0b49e1607a359afcf0c963c9571d25ecd4a0400643293002684d06d",
+      "manifest_sha256": "df4800c002c464e713d5bbe6f34f77162ee1391f1a45cc8537e411d8d3f7b57f",
+      "canonical_text": "This is an atomic, sequential toy with no late original request. Real recovery also depends on freshness, expiry, and in-flight work. When the evidence can't settle the outcome, preserve unknown.",
+      "tts_text": "This is an atomic, sequential toy with no late original request. Real recovery also depends on freshness, expiry, and in-flight work. When the evidence can't settle the outcome, preserve unknown.",
+      "has_tts_override": false,
+      "cache_metadata": {
+        "cache_key": "c8d6104c5019a0e0adfd2eb06451ed9692d4ec9907ea8a41a4111d621084cd02",
+        "audio_sha256": "e103008ca0b49e1607a359afcf0c963c9571d25ecd4a0400643293002684d06d",
+        "parameters": {
+          "tts_text": "This is an atomic, sequential toy with no late original request. Real recovery also depends on freshness, expiry, and in-flight work. When the evidence can't settle the outcome, preserve unknown.",
+          "voice": "am_michael",
+          "language": "en-us",
+          "speed": 0.95,
+          "lead_in": 0.12,
+          "tail_out": 0.5
+        },
+        "engine": {
+          "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+          "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+          "kokoro_onnx_version": "0.6.1",
+          "cache_version": 1
+        }
+      },
+      "audio_info": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "sample_width": 2,
+        "frames": 368160,
+        "duration_seconds": 15.34
+      },
+      "transcription": "This is an atomic, sequential toy with no late original request. Real recovery also depends on freshness, expiry, and inflight work. When the evidence can't settle the outcome, preserve unknown.",
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 0.0,
+          "end": 4.5,
+          "text": " This is an atomic, sequential toy with no late original request.",
+          "tokens": [
+            50363,
+            770,
+            318,
+            281,
+            17226,
+            11,
+            35582,
+            13373,
+            351,
+            645,
+            2739,
+            2656,
+            2581,
+            13,
+            50613
+          ],
+          "avg_logprob": -0.17751452637215456,
+          "compression_ratio": 1.3379310344827586,
+          "no_speech_prob": 0.001866958918981254,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.34,
+              "word": " This",
+              "probability": 0.9361857175827026
+            },
+            {
+              "start": 0.34,
+              "end": 0.56,
+              "word": " is",
+              "probability": 0.9959751963615417
+            },
+            {
+              "start": 0.56,
+              "end": 0.74,
+              "word": " an",
+              "probability": 0.9967905879020691
+            },
+            {
+              "start": 0.74,
+              "end": 1.36,
+              "word": " atomic,",
+              "probability": 0.9882686138153076
+            },
+            {
+              "start": 1.56,
+              "end": 2.06,
+              "word": " sequential",
+              "probability": 0.9989456534385681
+            },
+            {
+              "start": 2.06,
+              "end": 2.58,
+              "word": " toy",
+              "probability": 0.9874818325042725
+            },
+            {
+              "start": 2.58,
+              "end": 2.84,
+              "word": " with",
+              "probability": 0.9616024494171143
+            },
+            {
+              "start": 2.84,
+              "end": 3.1,
+              "word": " no",
+              "probability": 0.9978018403053284
+            },
+            {
+              "start": 3.1,
+              "end": 3.42,
+              "word": " late",
+              "probability": 0.9935166835784912
+            },
+            {
+              "start": 3.42,
+              "end": 3.92,
+              "word": " original",
+              "probability": 0.7947255373001099
+            },
+            {
+              "start": 3.92,
+              "end": 4.5,
+              "word": " request.",
+              "probability": 0.9646238088607788
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 5.44,
+          "end": 10.26,
+          "text": " Real recovery also depends on freshness, expiry, and inflight work.",
+          "tokens": [
+            50613,
+            6416,
+            7628,
+            635,
+            8338,
+            319,
+            4713,
+            1108,
+            11,
+            1033,
+            9045,
+            11,
+            290,
+            1167,
+            2971,
+            670,
+            13,
+            50863
+          ],
+          "avg_logprob": -0.17751452637215456,
+          "compression_ratio": 1.3379310344827586,
+          "no_speech_prob": 0.001866958918981254,
+          "words": [
+            {
+              "start": 5.44,
+              "end": 5.68,
+              "word": " Real",
+              "probability": 0.9862889051437378
+            },
+            {
+              "start": 5.68,
+              "end": 6.32,
+              "word": " recovery",
+              "probability": 0.9931923747062683
+            },
+            {
+              "start": 6.32,
+              "end": 6.7,
+              "word": " also",
+              "probability": 0.9968787431716919
+            },
+            {
+              "start": 6.7,
+              "end": 7.22,
+              "word": " depends",
+              "probability": 0.9980117082595825
+            },
+            {
+              "start": 7.22,
+              "end": 7.5,
+              "word": " on",
+              "probability": 0.999453604221344
+            },
+            {
+              "start": 7.5,
+              "end": 8.18,
+              "word": " freshness,",
+              "probability": 0.9951973259449005
+            },
+            {
+              "start": 8.52,
+              "end": 9.14,
+              "word": " expiry,",
+              "probability": 0.9902333319187164
+            },
+            {
+              "start": 9.44,
+              "end": 9.48,
+              "word": " and",
+              "probability": 0.997958779335022
+            },
+            {
+              "start": 9.48,
+              "end": 9.92,
+              "word": " inflight",
+              "probability": 0.7529232501983643
+            },
+            {
+              "start": 9.92,
+              "end": 10.26,
+              "word": " work.",
+              "probability": 0.9359058141708374
+            }
+          ],
+          "temperature": 0
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 10.84,
+          "end": 14.44,
+          "text": " When the evidence can't settle the outcome, preserve unknown.",
+          "tokens": [
+            50863,
+            1649,
+            262,
+            2370,
+            460,
+            470,
+            12259,
+            262,
+            8055,
+            11,
+            12201,
+            6439,
+            13,
+            51113
+          ],
+          "avg_logprob": -0.17751452637215456,
+          "compression_ratio": 1.3379310344827586,
+          "no_speech_prob": 0.001866958918981254,
+          "words": [
+            {
+              "start": 10.84,
+              "end": 11.0,
+              "word": " When",
+              "probability": 0.9962416887283325
+            },
+            {
+              "start": 11.0,
+              "end": 11.14,
+              "word": " the",
+              "probability": 0.994657576084137
+            },
+            {
+              "start": 11.14,
+              "end": 11.54,
+              "word": " evidence",
+              "probability": 0.9990276098251343
+            },
+            {
+              "start": 11.54,
+              "end": 11.96,
+              "word": " can't",
+              "probability": 0.9938981831073761
+            },
+            {
+              "start": 11.96,
+              "end": 12.26,
+              "word": " settle",
+              "probability": 0.9985999464988708
+            },
+            {
+              "start": 12.26,
+              "end": 12.42,
+              "word": " the",
+              "probability": 0.9933075904846191
+            },
+            {
+              "start": 12.42,
+              "end": 12.98,
+              "word": " outcome,",
+              "probability": 0.9990684390068054
+            },
+            {
+              "start": 13.48,
+              "end": 13.76,
+              "word": " preserve",
+              "probability": 0.9862087965011597
+            },
+            {
+              "start": 13.76,
+              "end": 14.44,
+              "word": " unknown.",
+              "probability": 0.9745340943336487
+            }
+          ],
+          "temperature": 0
+        }
+      ],
+      "differences_vs_canonical": [
+        {
+          "operation": "replace",
+          "expected": "in flight",
+          "recognized": "inflight"
+        }
+      ],
+      "differences_vs_tts": [
+        {
+          "operation": "replace",
+          "expected": "in flight",
+          "recognized": "inflight"
+        }
+      ],
+      "sha256_after": "e103008ca0b49e1607a359afcf0c963c9571d25ecd4a0400643293002684d06d",
+      "wav_unchanged_during_asr": true,
+      "asr_elapsed_seconds": 2.978524288999779,
+      "sha256_final_recheck": "e103008ca0b49e1607a359afcf0c963c9571d25ecd4a0400643293002684d06d",
+      "cache_hash_matches": true,
+      "cache_tts_text_matches": true
+    }
+  ]
+}

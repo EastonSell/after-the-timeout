@@ -10,6 +10,14 @@ This project studies how recovery should depend on the evidence an interface exp
 - [Read the research overview](docs/RESEARCH_OVERVIEW.md) for questions, controls, related work and falsifiable next steps.
 - [Browse the completed studies](MILESTONES.md), [partial-commit report](milestones/partial-commit/REPORT.md) and [public capability catalog](docs/public-capabilities.md).
 
+## Watch the narrated explanation
+
+[![Narrated concept illustration](docs/animations/narrated/poster.png)](docs/animations/narrated/concept.mp4)
+
+[56.1-second narrated MP4](docs/animations/narrated/concept.mp4) · [Complete transcript](docs/animations/narrated/transcript.txt) · [Captions](docs/animations/narrated/captions.vtt) · [Editable source and reproduction](docs/animations/narrated/RENDERING.md)
+
+Speech-led Manim animation with a synthetic stock voice. Synthetic contracts · not real api guarantees. This is an explanatory upgrade, not a new experimental result. Captions have approximate sentence timing. The [static-first viewer](docs/animations/narrated/index.html), poster and complete transcript provide a no-motion alternative. The original silent version and its historical QA remain unchanged below.
+
 ## Watch the concept in 24 seconds
 
 [![A same-ID retry produces two hidden effects without deduplication, one under a retained durable payload-bound key, and two after key expiry in an atomic sequential toy.](docs/animations/poster.png)](docs/animations/concept.mp4)

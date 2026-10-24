@@ -1,0 +1,62 @@
+WEBVTT
+
+NOTE Sentence timings are approximate, not word-aligned.
+
+1
+00:00:00.120 --> 00:00:03.232
+You send a request, then the reply disappears.
+
+2
+00:00:03.232 --> 00:00:07.087
+In this example, the service already committed the
+write.
+
+3
+00:00:07.087 --> 00:00:11.213
+The caller sees a timeout, but can't see that hidden
+outcome.
+
+4
+00:00:11.853 --> 00:00:15.514
+The same timeout could also mean nothing committed.
+
+5
+00:00:15.514 --> 00:00:19.031
+Those two histories look identical to the caller.
+
+6
+00:00:19.031 --> 00:00:24.056
+A missing or stale lookup doesn't necessarily resolve
+the uncertainty.
+
+7
+00:00:24.687 --> 00:00:27.025
+Now retry the same request ID.
+
+8
+00:00:27.025 --> 00:00:31.155
+With no deduplication, this toy produces two effects.
+
+9
+00:00:31.155 --> 00:00:36.377
+A retained, durable, payload-bound key prevents the
+duplicate here.
+
+10
+00:00:36.377 --> 00:00:40.196
+If the key has expired, the duplicate can return.
+
+11
+00:00:40.853 --> 00:00:45.735
+This is an atomic, sequential toy with no late original
+request.
+
+12
+00:00:45.735 --> 00:00:50.921
+Real recovery also depends on freshness, expiry, and in-
+flight work.
+
+13
+00:00:50.921 --> 00:00:55.573
+When the evidence can't settle the outcome, preserve
+unknown.
