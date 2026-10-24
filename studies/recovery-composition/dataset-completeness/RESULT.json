@@ -1,0 +1,199 @@
+{
+  "branch_nodes": 233172,
+  "cases": 800,
+  "coverage_manifest_sha256": "53bbf03853f8252529257ea0a812ee9424dfd090d1541d9a3f34f90bd109c969",
+  "decisions_checked": 338660,
+  "groups": 3200,
+  "imports_simulator": false,
+  "limits": [
+    "Completeness is relative to the retained case manifest, registered policies and finite scheduler contract, not every possible real-world scenario.",
+    "Recorded states are reconciled, not independently regenerated; omniscient_feasible is not rederived.",
+    "No new simulation, policy efficacy result, production reliability result, or independent preregistration is established.",
+    "The original dynamics checker and prior policy replay are reused after hash verification, not newly independent implementations."
+  ],
+  "passed": true,
+  "paths": 86796,
+  "pinned_expectation_sha256": {
+    "cases.json": "b3c752d5184a5444307c5e693b90e93ed0cdc10cf23ba4da9f90e951f854f14c",
+    "protocol.json": "d7f3b680664ed630057d8091f20388011847ea387867f4a5d3980ef4b5945786",
+    "results-v1/group-summaries.jsonl": "63ab8bba57c0bacda44a8411db6e19d50abb33dcdb7af78eb0b663c325638974",
+    "results-v1/independent-recount.json": "9e95a90441551caed58f47134bcdb98eb74f2888767383b49db8fa700af2697f",
+    "results-v1/run-input.json": "d1ba837f43083f0b41d592b7b647150fcd6ab288d8dec88052469c70f9cec5ec",
+    "results-v1/summary.json": "acdb20e99ac705875f0d7d446ccc9721b34ae1f6b2d9d193f81aa09b7b467094"
+  },
+  "pinned_verifier_sha256": {
+    "policy-attribution/policy_replay.py": "239e1313b82bc76c0f6cca461e68e07f7018e721008757b690136abe49d37a8d",
+    "source/checker.py": "9751e07387d849ca8b99592ff7b655235d8596a226a06bd92a38095a7e5b8665"
+  },
+  "recorded_states_consistent": 319968,
+  "rows_per_policy": {
+    "blind_keyed": 72840,
+    "capability_fallback": 4002,
+    "horizon_aware": 3944,
+    "naive_inspection": 6010
+  },
+  "scope": "complete retained case-policy membership, full case identity, unique scheduler paths, dynamics, branch coverage, policy attribution, group metrics and aggregates",
+  "source_commit": "68d60a8b4fead07a024b1ecdb00a9875c161b36b",
+  "totals": {
+    "exhaustive|blind_keyed": {
+      "all_actual_complete_cases": 356,
+      "all_justified_cases": 190,
+      "all_safe_cases": 276,
+      "any_actual_complete_cases": 356,
+      "cases": 486,
+      "paths": 58272,
+      "post_return_unsafe_cases": 114,
+      "unsafe_cases": 210
+    },
+    "exhaustive|capability_fallback": {
+      "all_actual_complete_cases": 396,
+      "all_justified_cases": 306,
+      "all_safe_cases": 486,
+      "any_actual_complete_cases": 396,
+      "cases": 486,
+      "paths": 2662,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "exhaustive|horizon_aware": {
+      "all_actual_complete_cases": 396,
+      "all_justified_cases": 306,
+      "all_safe_cases": 486,
+      "any_actual_complete_cases": 396,
+      "cases": 486,
+      "paths": 2628,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "exhaustive|naive_inspection": {
+      "all_actual_complete_cases": 396,
+      "all_justified_cases": 198,
+      "all_safe_cases": 306,
+      "any_actual_complete_cases": 396,
+      "cases": 486,
+      "paths": 4428,
+      "post_return_unsafe_cases": 90,
+      "unsafe_cases": 180
+    },
+    "expiry_late_original|blind_keyed": {
+      "all_actual_complete_cases": 112,
+      "all_justified_cases": 48,
+      "all_safe_cases": 32,
+      "any_actual_complete_cases": 112,
+      "cases": 128,
+      "paths": 2480,
+      "post_return_unsafe_cases": 96,
+      "unsafe_cases": 96
+    },
+    "expiry_late_original|capability_fallback": {
+      "all_actual_complete_cases": 128,
+      "all_justified_cases": 96,
+      "all_safe_cases": 128,
+      "any_actual_complete_cases": 128,
+      "cases": 128,
+      "paths": 832,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "expiry_late_original|horizon_aware": {
+      "all_actual_complete_cases": 128,
+      "all_justified_cases": 96,
+      "all_safe_cases": 128,
+      "any_actual_complete_cases": 128,
+      "cases": 128,
+      "paths": 832,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "expiry_late_original|naive_inspection": {
+      "all_actual_complete_cases": 128,
+      "all_justified_cases": 64,
+      "all_safe_cases": 0,
+      "any_actual_complete_cases": 128,
+      "cases": 128,
+      "paths": 352,
+      "post_return_unsafe_cases": 128,
+      "unsafe_cases": 128
+    },
+    "no_terminal_evidence|blind_keyed": {
+      "all_actual_complete_cases": 48,
+      "all_justified_cases": 24,
+      "all_safe_cases": 52,
+      "any_actual_complete_cases": 48,
+      "cases": 96,
+      "paths": 11544,
+      "post_return_unsafe_cases": 24,
+      "unsafe_cases": 44
+    },
+    "no_terminal_evidence|capability_fallback": {
+      "all_actual_complete_cases": 0,
+      "all_justified_cases": 0,
+      "all_safe_cases": 96,
+      "any_actual_complete_cases": 0,
+      "cases": 96,
+      "paths": 280,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "no_terminal_evidence|horizon_aware": {
+      "all_actual_complete_cases": 0,
+      "all_justified_cases": 0,
+      "all_safe_cases": 96,
+      "any_actual_complete_cases": 0,
+      "cases": 96,
+      "paths": 264,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "no_terminal_evidence|naive_inspection": {
+      "all_actual_complete_cases": 64,
+      "all_justified_cases": 32,
+      "all_safe_cases": 48,
+      "any_actual_complete_cases": 64,
+      "cases": 96,
+      "paths": 880,
+      "post_return_unsafe_cases": 24,
+      "unsafe_cases": 48
+    },
+    "tight_deadline_and_budget|blind_keyed": {
+      "all_actual_complete_cases": 54,
+      "all_justified_cases": 38,
+      "all_safe_cases": 72,
+      "any_actual_complete_cases": 54,
+      "cases": 90,
+      "paths": 544,
+      "post_return_unsafe_cases": 10,
+      "unsafe_cases": 18
+    },
+    "tight_deadline_and_budget|capability_fallback": {
+      "all_actual_complete_cases": 30,
+      "all_justified_cases": 21,
+      "all_safe_cases": 90,
+      "any_actual_complete_cases": 42,
+      "cases": 90,
+      "paths": 228,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "tight_deadline_and_budget|horizon_aware": {
+      "all_actual_complete_cases": 30,
+      "all_justified_cases": 15,
+      "all_safe_cases": 90,
+      "any_actual_complete_cases": 50,
+      "cases": 90,
+      "paths": 220,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    },
+    "tight_deadline_and_budget|naive_inspection": {
+      "all_actual_complete_cases": 70,
+      "all_justified_cases": 50,
+      "all_safe_cases": 90,
+      "any_actual_complete_cases": 70,
+      "cases": 90,
+      "paths": 350,
+      "post_return_unsafe_cases": 0,
+      "unsafe_cases": 0
+    }
+  }
+}

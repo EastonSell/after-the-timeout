@@ -1,0 +1,85 @@
+{
+  "base_commit": "68d60a8b4fead07a024b1ecdb00a9875c161b36b",
+  "constraints": {
+    "historical_files_modified": 0,
+    "new_model_runs": 0,
+    "new_simulator_runs": 0
+  },
+  "expected_and_verifier_files": [
+    {
+      "bytes": 295239,
+      "path": "cases.json",
+      "public_git_blob_sha": "3ab98150942c2152e1d333272bfa3f31a389d55e",
+      "sha256": "b3c752d5184a5444307c5e693b90e93ed0cdc10cf23ba4da9f90e951f854f14c"
+    },
+    {
+      "bytes": 498,
+      "path": "results-v1/run-input.json",
+      "public_git_blob_sha": "d7674b0cc1078782b0a2611bec8a3072fbb2a50d",
+      "sha256": "d1ba837f43083f0b41d592b7b647150fcd6ab288d8dec88052469c70f9cec5ec"
+    },
+    {
+      "bytes": 1456756,
+      "path": "results-v1/group-summaries.jsonl",
+      "sha256": "63ab8bba57c0bacda44a8411db6e19d50abb33dcdb7af78eb0b663c325638974",
+      "transport": {
+        "compression": "gzip",
+        "kind": "chunks",
+        "parts": [
+          {
+            "bytes": 77061,
+            "path": "payloads/results-v1--group-summaries-jsonl.0000.b64.txt",
+            "sha256": "571eda196bec0b3767130a4c578d0393aa52c0cd950d30c9642bcb8e2f6090ae"
+          }
+        ],
+        "transport_bytes": 57793,
+        "transport_sha256": "cc3481722bf8964a3aae104414ebb7a073877389aba86cd8747c2c7abe35dfec"
+      }
+    },
+    {
+      "bytes": 5446,
+      "path": "results-v1/summary.json",
+      "public_git_blob_sha": "1f73075f90f0f023bf58f2ac95d9902ec78e8d29",
+      "sha256": "acdb20e99ac705875f0d7d446ccc9721b34ae1f6b2d9d193f81aa09b7b467094"
+    },
+    {
+      "bytes": 5012,
+      "path": "results-v1/independent-recount.json",
+      "public_git_blob_sha": "7d73be5a1bae6a1b10df05dfeeeedf194fe23f12",
+      "sha256": "9e95a90441551caed58f47134bcdb98eb74f2888767383b49db8fa700af2697f"
+    },
+    {
+      "bytes": 3537,
+      "path": "protocol.json",
+      "public_git_blob_sha": "2b3fea066df0614b6c616aeb54387e2dd7338877",
+      "sha256": "d7f3b680664ed630057d8091f20388011847ea387867f4a5d3980ef4b5945786"
+    },
+    {
+      "bytes": 9450,
+      "path": "source/checker.py",
+      "public_git_blob_sha": "e05c52522c4ff6d37dee7cfe5294769e9ba2b3bb",
+      "sha256": "9751e07387d849ca8b99592ff7b655235d8596a226a06bd92a38095a7e5b8665"
+    },
+    {
+      "bytes": 7894,
+      "path": "policy-attribution/policy_replay.py",
+      "public_git_blob_sha": "56bb8c465d61d48bb5987fdc26404716fda2ab7f",
+      "sha256": "239e1313b82bc76c0f6cca461e68e07f7018e721008757b690136abe49d37a8d"
+    }
+  ],
+  "fixture": {
+    "case_ids": [
+      "exhaustive-0000",
+      "expiry_late_original-0589"
+    ],
+    "file": "fixture.json",
+    "groups": 8,
+    "preparation": "Unmodified rows, cases and certificates selected from the verified reconstruction. Subset aggregate expectations derived from retained group summaries, not from completeness_check.py.",
+    "rows": 14,
+    "source_archive_bytes": 6000978,
+    "source_archive_sha256": "b0f3db1fbd2f87593683646c0956bc8dfdaa264855e804b7110b2b31ae958281"
+  },
+  "payload_manifest_git_blob_sha": "294433f6661e5831e70d720d24a5c06320b895dc",
+  "public_tree_checked_utc": "2026-10-24T01:12:04Z",
+  "repository": "EastonSell/after-the-timeout"
+}
