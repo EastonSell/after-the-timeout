@@ -1,0 +1,15 @@
+test_old_policy_does_not_guarantee_completion (test_boundary.BoundaryTests.test_old_policy_does_not_guarantee_completion) ... ok
+test_two_call_completion (test_boundary.BoundaryTests.test_two_call_completion) ... FAIL
+
+======================================================================
+FAIL: test_two_call_completion (test_boundary.BoundaryTests.test_two_call_completion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/shared/recovery-race-boundary-20261024/test_boundary.py", line 10, in test_two_call_completion
+    self.assertTrue(all(r['metrics']['actual_complete'] for r in rows))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.006s
+
+FAILED (failures=1)

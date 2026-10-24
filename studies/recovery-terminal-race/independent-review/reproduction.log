@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "posthoc": true,
+  "source_commit": "d301e982db65deed6c065063ac243a1e0c0888c7",
+  "source_pins": {
+    "model.py": "7379f9464a8b00b68cca1b7cbce67d453335b5315be2959b9c2b85d2fc043766",
+    "checker.py": "9751e07387d849ca8b99592ff7b655235d8596a226a06bd92a38095a7e5b8665"
+  },
+  "bounds": {
+    "per_group_states": 100000,
+    "total_states": 2000000,
+    "wall_seconds": 120,
+    "max_output_bytes": 50000000
+  },
+  "total_cases": 976,
+  "grid_cases": 972,
+  "total_groups": 1952,
+  "total_states": 31350,
+  "total_paths": 5953,
+  "wall_seconds": 3.9537613169999304,
+  "pair_statistics": {
+    "cases": 972,
+    "complete_gain": 20,
+    "complete_loss": 0,
+    "justified_gain": 10,
+    "justified_loss": 0,
+    "theorem_condition_cases": 216,
+    "theorem_condition_paths": 700
+  },
+  "all_groups_independently_reconstructed_and_coverage_checked": true,
+  "limitation": "Finite grid tests the unchanged published simulator; policy relabeling enables its independent certified-write safety check but does not constitute an independent implementation of the new policy. Analytic proof is separate."
+}

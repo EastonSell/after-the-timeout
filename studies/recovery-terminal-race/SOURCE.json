@@ -1,0 +1,27 @@
+{
+  "local_source_pins": {
+    "checker.py": "9751e07387d849ca8b99592ff7b655235d8596a226a06bd92a38095a7e5b8665",
+    "model.py": "7379f9464a8b00b68cca1b7cbce67d453335b5315be2959b9c2b85d2fc043766"
+  },
+  "reference_commit": "d301e982db65deed6c065063ac243a1e0c0888c7",
+  "remote_verification": "Source identity inherited from saved verified tree/publication receipt; no live HEAD lookup in this task.",
+  "repository": "EastonSell/after-the-timeout",
+  "source_tree_entries": [
+    {
+      "mode": "100644",
+      "path": "studies/recovery-composition/source/checker.py",
+      "sha": "e05c52522c4ff6d37dee7cfe5294769e9ba2b3bb",
+      "size": 9450,
+      "type": "blob",
+      "url": "https://api.github.com/repos/EastonSell/after-the-timeout/git/blobs/e05c52522c4ff6d37dee7cfe5294769e9ba2b3bb"
+    },
+    {
+      "mode": "100644",
+      "path": "studies/recovery-composition/source/model.py",
+      "sha": "a727446826a2d54ac7039e59aceba5fd137b82e3",
+      "size": 11623,
+      "type": "blob",
+      "url": "https://api.github.com/repos/EastonSell/after-the-timeout/git/blobs/a727446826a2d54ac7039e59aceba5fd137b82e3"
+    }
+  ]
+}

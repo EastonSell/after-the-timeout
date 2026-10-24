@@ -1,0 +1,17 @@
+{
+  "model.py": {
+    "identical_to_restored_public_source": true,
+    "sha256": "7379f9464a8b00b68cca1b7cbce67d453335b5315be2959b9c2b85d2fc043766"
+  },
+  "checker.py": {
+    "identical_to_restored_public_source": true,
+    "sha256": "9751e07387d849ca8b99592ff7b655235d8596a226a06bd92a38095a7e5b8665"
+  },
+  "too_short_horizon": "pending event beyond frozen horizon",
+  "corrected_horizon": {
+    "paths": 1,
+    "safe": true,
+    "complete": true,
+    "max_evaluation_end": 10
+  }
+}

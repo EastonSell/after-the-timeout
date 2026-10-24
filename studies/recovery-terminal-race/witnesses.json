@@ -1,0 +1,6011 @@
+{
+  "one-call-insufficient": {
+    "horizon_aware": [
+      {
+        "case": {
+          "budget": 1,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "one-call-insufficient",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 4,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      },
+      {
+        "case": {
+          "budget": 1,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "one-call-insufficient",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 4,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      },
+      {
+        "case": {
+          "budget": 1,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "one-call-insufficient",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 4,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      }
+    ],
+    "terminal_barrier": [
+      {
+        "case": {
+          "budget": 1,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "one-call-insufficient",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 11
+      },
+      {
+        "case": {
+          "budget": 1,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "one-call-insufficient",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 11
+      }
+    ]
+  },
+  "short-positive-deadline": {
+    "horizon_aware": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 3,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "short-positive-deadline",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "early"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A",
+                "B"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A",
+              "B"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 4,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 3,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "short-positive-deadline",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "early"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A",
+                "B"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A",
+              "B"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 4,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 3,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "short-positive-deadline",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "early"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A",
+                "B"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A",
+              "B"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 1,
+          "cost": 1,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 4,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A",
+                "B"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 12
+      }
+    ],
+    "terminal_barrier": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 3,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "short-positive-deadline",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "early"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A",
+                "B"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A",
+              "B"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "barrier snapshot exceeds action deadline"
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 0,
+          "cost": 0,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 4,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "barrier snapshot exceeds action deadline",
+          "return_time": 1,
+          "unresolved": [
+            "A",
+            "B"
+          ]
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [],
+        "scheduler_paths": 1,
+        "states_explored": 4
+      }
+    ]
+  },
+  "timeout-not-justified": {
+    "horizon_aware": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "timeout-not-justified",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "timeout_commit",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 7,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 8,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 20
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "timeout-not-justified",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "timeout_commit",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 7,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 8,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 20
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "timeout-not-justified",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "timeout_commit",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 4,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "timeout_commit",
+              "suppressed": {},
+              "t": 5,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 8
+            },
+            "kind": "event",
+            "t": 8
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 8
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 8,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "timeout_commit",
+              "positive": [],
+              "t": 5
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 20
+      }
+    ],
+    "terminal_barrier": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "timeout-not-justified",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "timeout_commit",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "timeout_commit",
+              "suppressed": {},
+              "t": 6,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 8
+            },
+            "kind": "event",
+            "t": 8
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 8
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 9
+            },
+            "kind": "event",
+            "t": 9
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 9
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 9,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 6,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "timeout_commit",
+              "positive": [],
+              "t": 6
+            },
+            "t": 6
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 19
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "timeout-not-justified",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "timeout_commit",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "timeout_commit",
+              "suppressed": {},
+              "t": 6,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 8
+            },
+            "kind": "event",
+            "t": 8
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 8
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 9
+            },
+            "kind": "event",
+            "t": 9
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 9
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 9,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 6,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "timeout_commit",
+              "positive": [],
+              "t": 6
+            },
+            "t": 6
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 19
+      }
+    ]
+  },
+  "witness": {
+    "horizon_aware": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 7,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 8,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 25
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 7,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 8,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "resource limit"
+            },
+            "kind": "action",
+            "t": 5
+          }
+        ],
+        "metrics": {
+          "actual_complete": false,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 0
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 5,
+          "horizon": 12,
+          "justified_complete": false,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "resource limit",
+          "return_time": 5,
+          "unresolved": [
+            "B"
+          ]
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 25
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 4,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 5
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 6,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 6
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 6,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 6,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 6
+            },
+            "t": 6
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 25
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 4,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 5
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 6,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 6
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 6
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 6,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 6,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 6
+            },
+            "t": 6
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 25
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 3
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 3
+            },
+            "kind": "event",
+            "t": 3
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 3
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 4,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 5
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 6,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 6
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 6,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 6,
+          "unresolved": []
+        },
+        "policy": "horizon_aware",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 4,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 4
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 6
+            },
+            "t": 6
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 25
+      }
+    ],
+    "terminal_barrier": [
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      },
+      {
+        "case": {
+          "budget": 2,
+          "deadline": 5,
+          "family": "new_posthoc_not_frozen",
+          "horizon": 12,
+          "id": "witness",
+          "lag": 0,
+          "late": 3,
+          "observation": "certified",
+          "original_terminal": 4,
+          "originals": [
+            "early",
+            "never"
+          ],
+          "retry_outcome": "success",
+          "scope": "none",
+          "strategy": "reserve",
+          "ttl": 0
+        },
+        "hidden_trace": [
+          {
+            "admitted": [
+              "A",
+              "B"
+            ],
+            "attempt": "original",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 0,
+            "targets": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 1,
+              "items": [
+                "A"
+              ],
+              "kind": "effect",
+              "t": 0
+            },
+            "kind": "event",
+            "t": 0
+          },
+          {
+            "attempt": "original",
+            "items": [
+              "A"
+            ],
+            "kind": "effect",
+            "t": 0
+          },
+          {
+            "event": {
+              "id": 3,
+              "kind": "decide",
+              "t": 1
+            },
+            "kind": "event",
+            "t": 1
+          },
+          {
+            "action": {
+              "kind": "wait",
+              "until": 4
+            },
+            "kind": "action",
+            "t": 1
+          },
+          {
+            "event": {
+              "attempt": "original",
+              "id": 2,
+              "kind": "terminal",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "attempt": "original",
+            "kind": "terminal",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 4,
+              "kind": "decide",
+              "t": 4
+            },
+            "kind": "event",
+            "t": 4
+          },
+          {
+            "action": {
+              "kind": "read"
+            },
+            "kind": "action",
+            "t": 4
+          },
+          {
+            "event": {
+              "id": 5,
+              "kind": "read",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "event": {
+              "id": 6,
+              "kind": "decide",
+              "t": 5
+            },
+            "kind": "event",
+            "t": 5
+          },
+          {
+            "action": {
+              "keyed": false,
+              "kind": "write",
+              "reason": "certified terminal absence",
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "action",
+            "t": 5
+          },
+          {
+            "admitted": [
+              "B"
+            ],
+            "attempt": "r1",
+            "keyed": false,
+            "kind": "admission",
+            "suppressed": {},
+            "t": 5,
+            "targets": [
+              "B"
+            ]
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 7,
+              "items": [
+                "B"
+              ],
+              "kind": "effect",
+              "t": 6
+            },
+            "kind": "event",
+            "t": 6
+          },
+          {
+            "attempt": "r1",
+            "items": [
+              "B"
+            ],
+            "kind": "effect",
+            "t": 6
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 8,
+              "kind": "terminal",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "attempt": "r1",
+            "kind": "terminal",
+            "t": 7
+          },
+          {
+            "event": {
+              "attempt": "r1",
+              "id": 9,
+              "kind": "response",
+              "outcome": "success",
+              "suppressed": {},
+              "t": 7,
+              "targets": [
+                "B"
+              ]
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "event": {
+              "id": 10,
+              "kind": "decide",
+              "t": 7
+            },
+            "kind": "event",
+            "t": 7
+          },
+          {
+            "action": {
+              "kind": "stop",
+              "reason": "positive evidence for all items"
+            },
+            "kind": "action",
+            "t": 7
+          }
+        ],
+        "metrics": {
+          "actual_complete": true,
+          "calls": 2,
+          "cost": 2,
+          "counts": {
+            "A": 1,
+            "B": 1
+          },
+          "duplicate_effects": 0,
+          "duplicate_items": 0,
+          "evaluation_end": 7,
+          "horizon": 12,
+          "justified_complete": true,
+          "pending_events": 0,
+          "post_return_duplicate_effects": 0,
+          "return_reason": "positive evidence for all items",
+          "return_time": 7,
+          "unresolved": []
+        },
+        "policy": "terminal_barrier",
+        "public_trace": [
+          {
+            "kind": "observation",
+            "observation": {
+              "positive": [
+                "A"
+              ],
+              "profile": "certified",
+              "snapshot": 5,
+              "terminal_absent": [
+                "B"
+              ],
+              "write_count": 0
+            },
+            "t": 5
+          },
+          {
+            "kind": "reply",
+            "reply": {
+              "attempt": "r1",
+              "outcome": "success",
+              "positive": [
+                "B"
+              ],
+              "t": 7
+            },
+            "t": 7
+          }
+        ],
+        "scheduler_paths": 1,
+        "states_explored": 29
+      }
+    ]
+  }
+}

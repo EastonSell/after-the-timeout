@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "reproduced_exact_paths": 5953,
+  "audited_candidate_paths": 2561,
+  "audited_candidate_decisions": 8529,
+  "missing_scheduler_branch_rejected": true,
+  "additional_cases": 729,
+  "additional_paths": 1680,
+  "additional_decisions": 4752,
+  "limitations": "Separate decision specification plus original independent environment checker; extra post-hoc tests are not held-out validation or universal proof."
+}

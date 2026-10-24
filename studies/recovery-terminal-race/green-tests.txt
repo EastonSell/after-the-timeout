@@ -1,0 +1,10 @@
+test_extra_calls_require_longer_than_two_call_horizon (test_boundary.BoundaryTests.test_extra_calls_require_longer_than_two_call_horizon) ... ok
+test_old_policy_does_not_guarantee_completion (test_boundary.BoundaryTests.test_old_policy_does_not_guarantee_completion) ... ok
+test_short_deadline_disproves_evidence_dominance (test_boundary.BoundaryTests.test_short_deadline_disproves_evidence_dominance) ... ok
+test_timeout_eventual_completion_is_not_return_evidence (test_boundary.BoundaryTests.test_timeout_eventual_completion_is_not_return_evidence) ... ok
+test_two_call_completion (test_boundary.BoundaryTests.test_two_call_completion) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.011s
+
+OK
