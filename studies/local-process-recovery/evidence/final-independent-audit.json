@@ -1,0 +1,1290 @@
+{
+  "actual_bytes_including_summary": 4229846,
+  "audited_trials": 120,
+  "by_scenario": {
+    "concurrent_recoverers": {
+      "effects": [
+        2
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "live_negative": {
+      "effects": [
+        2
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "no_fault": {
+      "effects": [
+        1
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "same_key": {
+      "effects": [
+        1
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "stale_negative": {
+      "effects": [
+        2
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "terminal_fence": {
+      "effects": [
+        1
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "terminal_with_authoritative_read": {
+      "effects": [
+        1
+      ],
+      "trials": 15,
+      "violations": 0
+    },
+    "terminal_with_stale_read": {
+      "effects": [
+        2
+      ],
+      "trials": 15,
+      "violations": 0
+    }
+  },
+  "distinct_processes_per_trial": {
+    "3": 105,
+    "5": 15
+  },
+  "fault_trials": 105,
+  "independent_audit_passed": true,
+  "indexed_trials": 120,
+  "min_admission_to_timeout_ms": 74.634843,
+  "planned_trials": 120,
+  "primary_elapsed_s": 36.26143801499984,
+  "retained_trial_directories": 120,
+  "rows": [
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-000-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.515074,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-001-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.50954,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-002-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 78.062705,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-003-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 78.164172,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-004-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.818732,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-005-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 78.087511,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-006-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.729822,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-007-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-008-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.479059,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-009-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.642299,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-010-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.898066,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-011-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 74.634843,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-012-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.411307,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-013-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 76.76677,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-014-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.841885,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-015-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-016-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.807173,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-017-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.769392,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-018-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.342233,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-019-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 75.222868,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-020-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.735716,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-021-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.706993,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-022-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.637953,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-023-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-024-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.778635,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-025-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.679936,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-026-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 78.216986,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-027-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.593635,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-028-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 78.217261,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-029-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 76.369471,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-030-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.73507,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-031-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-032-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.737122,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-033-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.629385,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-034-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.818001,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-035-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 76.436034,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-036-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 75.147562,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-037-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 77.814026,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-038-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 77.822693,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.08,
+      "trial": "trial-039-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-040-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.725545,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-041-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.21131,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-042-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.812617,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-043-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.897825,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-044-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.150491,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-045-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.645856,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-046-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.081722,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-047-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-048-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 116.181968,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-049-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.712616,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-050-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.644013,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-051-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.962292,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-052-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.005508,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-053-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.874155,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-054-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 116.298079,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-055-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-056-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.033306,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-057-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.324731,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-058-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.692355,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-059-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.964921,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-060-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 115.540226,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-061-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.877865,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-062-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.685481,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-063-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-064-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.6841,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-065-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.256789,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-066-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.756278,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-067-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 113.739244,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-068-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.1918,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-069-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 118.258386,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-070-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.066732,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-071-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-072-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.159666,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-073-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 118.014227,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-074-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 116.314961,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-075-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.877946,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-076-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.905393,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-077-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 117.603898,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-078-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 117.917832,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.12,
+      "trial": "trial-079-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-080-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.728316,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-081-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.785434,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-082-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.865764,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-083-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.333956,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-084-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.346254,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-085-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.981305,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-086-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.050033,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-087-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-088-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.082525,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-089-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.733786,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-090-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.191932,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-091-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.259093,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-092-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.986791,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-093-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.083357,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-094-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.256602,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-095-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-096-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.714686,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-097-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.318772,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-098-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 195.530469,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-099-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.068147,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-100-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.451643,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-101-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.132085,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-102-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.21759,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-103-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-104-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.250627,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-105-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.923527,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-106-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 195.906137,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-107-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.82915,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-108-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.137344,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-109-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 198.315418,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-110-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.858199,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-111-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": null,
+      "process_count": 3,
+      "scenario": "no_fault",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-112-no_fault",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.868558,
+      "process_count": 3,
+      "scenario": "live_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-113-live_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 196.133428,
+      "process_count": 3,
+      "scenario": "stale_negative",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-114-stale_negative",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.73402,
+      "process_count": 3,
+      "scenario": "same_key",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-115-same_key",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.528966,
+      "process_count": 3,
+      "scenario": "terminal_fence",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-116-terminal_fence",
+      "violations": []
+    },
+    {
+      "attempt_count": 2,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 198.082576,
+      "process_count": 3,
+      "scenario": "terminal_with_stale_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-117-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 1,
+      "effect_count": 1,
+      "original_admission_to_timeout_ms": 197.851889,
+      "process_count": 3,
+      "scenario": "terminal_with_authoritative_read",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-118-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "attempt_count": 3,
+      "effect_count": 2,
+      "original_admission_to_timeout_ms": 197.897286,
+      "process_count": 5,
+      "scenario": "concurrent_recoverers",
+      "socket_timeout_s": 0.2,
+      "trial": "trial-119-concurrent_recoverers",
+      "violations": []
+    }
+  ],
+  "source_hash_matches": {
+    "PLAN.md": true,
+    "PREIMPLEMENTATION.sha256": true,
+    "PROTOCOL.md": true,
+    "client.py": true,
+    "common.py": true,
+    "experiment.py": true,
+    "service.py": true,
+    "test_evidence.py": true,
+    "test_process.py": true,
+    "verify.py": true
+  },
+  "total_attempts": 225,
+  "total_effects": 180,
+  "violations": []
+}

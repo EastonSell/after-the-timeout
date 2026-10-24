@@ -1,0 +1,496 @@
+{
+  "live_negative": {
+    "trial": "evidence/primary-run/trial-001-live_negative",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.946,
+        "mono_ns": 4038484837044
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 81.461,
+        "mono_ns": 4038562352118
+      },
+      {
+        "event": "authoritative_read",
+        "role": "service",
+        "op": "original",
+        "effect_count": 0,
+        "operation_state": "pending",
+        "relative_ms": 131.361,
+        "mono_ns": 4038612252256
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 135.405,
+        "mono_ns": 4038616296217
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 137.254,
+        "mono_ns": 4038618145018
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 140.852,
+        "mono_ns": 4038621743538
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 154.686,
+        "mono_ns": 4038635577796
+      }
+    ]
+  },
+  "stale_negative": {
+    "trial": "evidence/primary-run/trial-002-stale_negative",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.988,
+        "mono_ns": 4038754827831
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 5.63,
+        "mono_ns": 4038756470017
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 81.497,
+        "mono_ns": 4038832337371
+      },
+      {
+        "event": "cached_read",
+        "role": "service",
+        "op": null,
+        "effect_count": 0,
+        "operation_state": null,
+        "relative_ms": 126.938,
+        "mono_ns": 4038877778609
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 131.609,
+        "mono_ns": 4038882449214
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 133.67,
+        "mono_ns": 4038884510491
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 150.541,
+        "mono_ns": 4038901381111
+      }
+    ]
+  },
+  "same_key": {
+    "trial": "evidence/primary-run/trial-003-same_key",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.947,
+        "mono_ns": 4039027250383
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 82.009,
+        "mono_ns": 4039105313088
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 129.751,
+        "mono_ns": 4039153055088
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 132.491,
+        "mono_ns": 4039155794518
+      },
+      {
+        "event": "deduplicated",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 135.706,
+        "mono_ns": 4039159009769
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 149.381,
+        "mono_ns": 4039172685053
+      }
+    ]
+  },
+  "terminal_fence": {
+    "trial": "evidence/primary-run/trial-004-terminal_fence",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.576,
+        "mono_ns": 4039307124724
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 81.741,
+        "mono_ns": 4039385288896
+      },
+      {
+        "event": "fence",
+        "role": "service",
+        "op": "original",
+        "effect_count": 0,
+        "operation_state": "cancelled",
+        "relative_ms": 127.906,
+        "mono_ns": 4039431454791
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 130.968,
+        "mono_ns": 4039434516626
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 132.305,
+        "mono_ns": 4039435853552
+      },
+      {
+        "event": "suppressed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 134.061,
+        "mono_ns": 4039437608998
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 148.134,
+        "mono_ns": 4039451682592
+      }
+    ]
+  },
+  "terminal_with_stale_read": {
+    "trial": "evidence/primary-run/trial-005-terminal_with_stale_read",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.859,
+        "mono_ns": 4039587725454
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 5.332,
+        "mono_ns": 4039589198935
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 81.677,
+        "mono_ns": 4039665544186
+      },
+      {
+        "event": "authoritative_read",
+        "role": "service",
+        "op": "original",
+        "effect_count": 1,
+        "operation_state": "committed",
+        "relative_ms": 128.862,
+        "mono_ns": 4039712728461
+      },
+      {
+        "event": "cached_read",
+        "role": "service",
+        "op": null,
+        "effect_count": 0,
+        "operation_state": null,
+        "relative_ms": 129.774,
+        "mono_ns": 4039713640490
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 140.236,
+        "mono_ns": 4039724102869
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "retry",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 142.847,
+        "mono_ns": 4039726713744
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 159.315,
+        "mono_ns": 4039743181494
+      }
+    ]
+  },
+  "terminal_with_authoritative_read": {
+    "trial": "evidence/primary-run/trial-006-terminal_with_authoritative_read",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 4.108,
+        "mono_ns": 4039907809205
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 5.482,
+        "mono_ns": 4039909182965
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 82.196,
+        "mono_ns": 4039985896716
+      },
+      {
+        "event": "authoritative_read",
+        "role": "service",
+        "op": "original",
+        "effect_count": 1,
+        "operation_state": "committed",
+        "relative_ms": 121.883,
+        "mono_ns": 4040025584116
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 138.061,
+        "mono_ns": 4040041762495
+      }
+    ]
+  },
+  "concurrent_recoverers": {
+    "trial": "evidence/primary-run/trial-007-concurrent_recoverers",
+    "events": [
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 3.923,
+        "mono_ns": 4040166685720
+      },
+      {
+        "event": "request_timeout",
+        "role": "original",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 81.653,
+        "mono_ns": 4040244415542
+      },
+      {
+        "event": "fence",
+        "role": "service",
+        "op": "original",
+        "effect_count": 0,
+        "operation_state": "cancelled",
+        "relative_ms": 137.719,
+        "mono_ns": 4040300481512
+      },
+      {
+        "event": "authoritative_read",
+        "role": "service",
+        "op": "original",
+        "effect_count": 0,
+        "operation_state": "cancelled",
+        "relative_ms": 181.542,
+        "mono_ns": 4040344304401
+      },
+      {
+        "event": "authoritative_read",
+        "role": "service",
+        "op": "original",
+        "effect_count": 0,
+        "operation_state": "cancelled",
+        "relative_ms": 185.735,
+        "mono_ns": 4040348497396
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "recovery2",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 192.324,
+        "mono_ns": 4040355086151
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "recovery2",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 195.865,
+        "mono_ns": 4040358627213
+      },
+      {
+        "event": "admitted",
+        "role": "service",
+        "op": "recovery1",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 200.031,
+        "mono_ns": 4040362793432
+      },
+      {
+        "event": "effect_committed",
+        "role": "service",
+        "op": "recovery1",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 202.523,
+        "mono_ns": 4040365285233
+      },
+      {
+        "event": "suppressed",
+        "role": "service",
+        "op": "original",
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 219.495,
+        "mono_ns": 4040382257477
+      },
+      {
+        "event": "server_stopped",
+        "role": "service",
+        "op": null,
+        "effect_count": null,
+        "operation_state": null,
+        "relative_ms": 232.777,
+        "mono_ns": 4040395539506
+      }
+    ]
+  }
+}

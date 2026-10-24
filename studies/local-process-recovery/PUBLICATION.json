@@ -1,0 +1,102 @@
+{
+  "base_commit": "bb7c59a61f95575edbd3c90719f69dffa1dfd5db",
+  "changed_existing_files_excluding_regenerated_outer_manifest": {
+    "EXECUTION.md": {
+      "after_sha256": "15d90101b6b4a906159a4fb4d48066453413dfd8ac547b6e3ff060a2b2661f63",
+      "before_sha256": "e804d7dbf0fac979e9f279cabf46dee4e4a5c67183e6d0540e9366a54380eafa"
+    },
+    "README.md": {
+      "after_sha256": "6a6e433610cb6862e8f90dc0d8c941b0ffc50cda801440aeba3a0e9c797e3b17",
+      "before_sha256": "bccf2c7761649cb22ebcc2f3991298248ad5f67f6f150d15c694547bdbd3d666"
+    },
+    "REPORT.md": {
+      "after_sha256": "ec1973066cb645ac959db4abf49c62bea96f25469085ca2276f7eaf82a7419b8",
+      "before_sha256": "da78bfa5448c73916aa88de4fe880453c0fc58f6593fdded36ce44ca94406ffb"
+    },
+    "evidence/mutations/disable_key_deduplication/test-output.txt": {
+      "after_sha256": "0f58eac14925f8c9efdb41bd148c05eb68e51dd967fd22bd3a9d0c304be4382e",
+      "before_sha256": "85cb42ebb6625e9dfa9800dbf4ca7870a9bcaaeea636134970bc95b479b363c0"
+    },
+    "evidence/mutations/disable_original_fence/test-output.txt": {
+      "after_sha256": "d541835e59cd10edde7e1efcea0f87000d65cccf08863dcf4e086d8fe3c8d30a",
+      "before_sha256": "aae1a7f3aa9a04fd4660d1c8d33f8a67c81b37bc6470656a7621a5ca84f37adc"
+    },
+    "evidence/mutations/ignore_idempotency_key/test-output.txt": {
+      "after_sha256": "0610c499073ede76c020dc2c77964c6162f1247c27262ab478d6debf8f8f1368",
+      "before_sha256": "7ff760869fa917a33bbf1ef45c7b119b3768be6b39319be569f77daf657e812a"
+    },
+    "evidence/postrun-lifecycle-red.txt": {
+      "after_sha256": "1b52493a3990441bada36d820f52314fa76fed92f41f4acd4ac24d76df0c43cb",
+      "before_sha256": "b30f68e8c45ee1bf65735422a3f9ed89443ba146604339a2125f08286bd9010d"
+    },
+    "evidence/postrun-verifier-red.txt": {
+      "after_sha256": "4a65f75aeb0a7d9a51fa5307d7946a46b091b2db17136abb468a0af3ae0e5e3b",
+      "before_sha256": "5e7e671221cee0ef358e15d85a659af24c015f2636f9c3c543cff55b3bf730ae"
+    },
+    "evidence/tests-red.txt": {
+      "after_sha256": "b7af123f27ad434dd7c17bec50f7d9ca953ad255c7bb434502ac19faa3299331",
+      "before_sha256": "eb34ef959cdfc416bec55b23b44177b4ef5f7429b5952e822c62d1febfd5b561"
+    },
+    "evidence/tests-verifier-red.txt": {
+      "after_sha256": "31017cc7171e7e368369d233dd7a24316c0e7cf77219a70b09a7df1a4e9f25fa",
+      "before_sha256": "e43786e09f90f735a11b8cf38d748dac6c4267099213a5bbf159af10cbf52d6b"
+    },
+    "independent-review/mutation-disable_original_fence.txt": {
+      "after_sha256": "589181604297e4df83ec778519ff2906ec9f9e4e235f00272326f1f0a8917999",
+      "before_sha256": "398c0ad716e186878dece6929bf2e3e354d3403cd6a2561ddc4fc73ec0233bb2"
+    },
+    "independent-review/mutation-ignore_idempotency_key.txt": {
+      "after_sha256": "0e6be7bc631f5c67ad557ab224333a2c50bc86f72050b31f446d2f66f4b812ff",
+      "before_sha256": "fb3cff811872c1de40672763ad940b36f685d403b72342402eda8389e658e0a8"
+    },
+    "independent-review/postrun-review/additional-probes.json": {
+      "after_sha256": "70e8ee01008466c2ebb5eadfd3a92f02009610b2878ea1a7fb3923962dfe457e",
+      "before_sha256": "1c367d3ef923c139c33627b14bc0c6575c3eb45616c05806c46458f9d661fcf3"
+    },
+    "independent-review/postrun-review/earlier_incomplete_matrix-verifier.json": {
+      "after_sha256": "28c97851eafba52e508d5167fe2189508848d0910ddf3eaffbebb86cf0408403",
+      "before_sha256": "31ea6d12eef470f05cdcad6d6a9061b98d75b93b463dadacc0ecb0f6aecb5382"
+    },
+    "independent-review/postrun-review/earlier_missing_snapshot_event-verifier.json": {
+      "after_sha256": "ddf0dfabc81a9397cd3017dc6366ad183903d312936fb487c94bf2ede660223f",
+      "before_sha256": "fb2b597b84bf3e52d4db09fa78b0998d7b6724fc0b490d9e0f1ab9654ce6ac65"
+    },
+    "independent-review/postrun-review/final-earlier_incomplete_matrix-verifier.json": {
+      "after_sha256": "28c97851eafba52e508d5167fe2189508848d0910ddf3eaffbebb86cf0408403",
+      "before_sha256": "31ea6d12eef470f05cdcad6d6a9061b98d75b93b463dadacc0ecb0f6aecb5382"
+    },
+    "independent-review/postrun-review/final-earlier_missing_snapshot_event-verifier.json": {
+      "after_sha256": "ddf0dfabc81a9397cd3017dc6366ad183903d312936fb487c94bf2ede660223f",
+      "before_sha256": "fb2b597b84bf3e52d4db09fa78b0998d7b6724fc0b490d9e0f1ab9654ce6ac65"
+    },
+    "independent-review/postrun-review/final-probes.json": {
+      "after_sha256": "87c7704737091c63ac29d8f3d26fb836cde5d32cd458715b186b34850dc59919",
+      "before_sha256": "b05315fc0c10777f72f1d3df5a3963898f770a20cfb1f13aa718efcdfa09adc7"
+    },
+    "independent-review/review-artifacts-sha256.json": {
+      "after_sha256": "b37f87ba641116acf4cd4a967ed4b29562dc7d95ae11db26fbacfb4b8b259717",
+      "before_sha256": "5fbe28c30118ad0b690a2411892641d6480f5a7c26596ead5d4da1118eb1d3a0"
+    }
+  },
+  "original_archive_sha256": "69421d615dc97d48d2f850c2229b41edb5e302b0fd659bc36e504a3a22458c9c",
+  "path_only_redaction_count": 52,
+  "path_only_redactions_by_file": {
+    "evidence/mutations/disable_key_deduplication/test-output.txt": 7,
+    "evidence/mutations/disable_original_fence/test-output.txt": 2,
+    "evidence/mutations/ignore_idempotency_key/test-output.txt": 2,
+    "evidence/postrun-lifecycle-red.txt": 4,
+    "evidence/postrun-verifier-red.txt": 7,
+    "evidence/tests-red.txt": 16,
+    "evidence/tests-verifier-red.txt": 2,
+    "independent-review/mutation-disable_original_fence.txt": 2,
+    "independent-review/mutation-ignore_idempotency_key.txt": 2,
+    "independent-review/postrun-review/additional-probes.json": 2,
+    "independent-review/postrun-review/earlier_incomplete_matrix-verifier.json": 1,
+    "independent-review/postrun-review/earlier_missing_snapshot_event-verifier.json": 1,
+    "independent-review/postrun-review/final-earlier_incomplete_matrix-verifier.json": 1,
+    "independent-review/postrun-review/final-earlier_missing_snapshot_event-verifier.json": 1,
+    "independent-review/postrun-review/final-probes.json": 2
+  },
+  "protected_original_files": 1478,
+  "protected_original_files_byte_identical": true
+}

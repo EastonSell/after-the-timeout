@@ -1,0 +1,729 @@
+{
+  "audited_trials": 120,
+  "indexed_trials": 120,
+  "passed": true,
+  "planned_trials": 120,
+  "rows": [
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-000-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-001-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-002-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-003-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-004-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-005-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-006-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-007-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-008-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-009-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-010-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-011-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-012-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-013-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-014-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-015-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-016-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-017-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-018-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-019-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-020-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-021-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-022-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-023-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-024-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-025-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-026-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-027-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-028-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-029-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-030-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-031-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-032-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-033-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-034-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-035-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-036-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-037-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-038-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-039-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-040-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-041-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-042-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-043-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-044-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-045-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-046-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-047-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-048-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-049-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-050-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-051-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-052-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-053-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-054-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-055-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-056-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-057-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-058-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-059-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-060-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-061-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-062-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-063-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-064-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-065-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-066-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-067-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-068-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-069-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-070-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-071-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-072-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-073-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-074-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-075-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-076-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-077-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-078-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-079-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-080-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-081-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-082-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-083-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-084-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-085-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-086-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-087-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-088-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-089-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-090-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-091-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-092-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-093-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-094-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-095-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-096-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-097-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-098-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-099-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-100-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-101-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-102-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-103-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-104-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-105-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-106-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-107-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-108-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-109-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-110-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-111-concurrent_recoverers",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "no_fault",
+      "trial": "trial-112-no_fault",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "live_negative",
+      "trial": "trial-113-live_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "stale_negative",
+      "trial": "trial-114-stale_negative",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "same_key",
+      "trial": "trial-115-same_key",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_fence",
+      "trial": "trial-116-terminal_fence",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "terminal_with_stale_read",
+      "trial": "trial-117-terminal_with_stale_read",
+      "violations": []
+    },
+    {
+      "effect_count": 1,
+      "scenario": "terminal_with_authoritative_read",
+      "trial": "trial-118-terminal_with_authoritative_read",
+      "violations": []
+    },
+    {
+      "effect_count": 2,
+      "scenario": "concurrent_recoverers",
+      "trial": "trial-119-concurrent_recoverers",
+      "violations": []
+    }
+  ],
+  "violations": []
+}
