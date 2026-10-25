@@ -1,0 +1,284 @@
+{
+  "changes": [
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 10,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "9f8d98d5e211d219d17a5cffc6b80ac4efaebb577709fd0a1195ceb93cf947da",
+      "public_path": "source/evidence/assessment-red.txt",
+      "public_sha256": "7254f0dc9f45697b30704c69bf53ada06835341fb0a140aed40b8e709c1d1640"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 7,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "d569602300ae272189e5a4c32e2365b1e20a18644250f1771d3e948c66189580",
+      "public_path": "source/evidence/gate-red.txt",
+      "public_sha256": "617fa157a7c5cdef54d49ef15430fe32930d84323f0459dcd1c4c406e6d8c906"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 4,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "a4f30577b880c630cd977f58bfe1e766cd00dbe5fded0291d6d2adf1bae2052d",
+      "public_path": "source/evidence/mutation-drop_retained_key.txt",
+      "public_sha256": "8d7e9f873f834e294bdc88b5cc808af277ac0c0d4f67322e8abfc3573d03b048"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 1,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "a953c1923b4a1f1b11074f890219cc733e756e8065fe2a855e312a8372f067e2",
+      "public_path": "source/evidence/mutation-ignore_payload_conflict.txt",
+      "public_sha256": "f1ba5653b247b05aa53650be014aa96f52a2a3c6421caee17509c61805467708"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 3,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "7119b82fd23bc636b970f39d401f014618eb063e26fd664ae8058aafb8ec682a",
+      "public_path": "source/evidence/mutation-move_postcommit_hook_early.txt",
+      "public_sha256": "7e723420d84491971e3d221a10e97d4eac76f5acbe483cee764e36f3603e8c21"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 8,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "07bb2324448ad97a7a19aaf83f44d8cfc301f1073f901fadd285a853f3b4dd9d",
+      "public_path": "source/evidence/synthetic-red.txt",
+      "public_sha256": "30dbfa79d238deaca0953567160bc769ef4c28a2d184eaf53ceef22a9ecd119b"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal reviewer identity",
+          "occurrences": 1,
+          "replacement": "independent-implementation-reviewer"
+        }
+      ],
+      "original_sha256": "3ef52cd0ed0dca58bc3437c13cfed09ef653a33c5c4a5d0831e8e1f958b1cb58",
+      "public_path": "run/admission.json",
+      "public_sha256": "a55fba2e6e98565258bbe4d1f3c0954fe56b771232bf3f782628d778faeb82b2"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "Authorized review decides execution and publication"
+        }
+      ],
+      "original_sha256": "f993e3e4ea4a7b3a47f2d967b0d17ba01f929bda2ad715d10127c3eb306331b2",
+      "public_path": "run/source/PROTOCOL.md",
+      "public_sha256": "4d0c41ac1cf721ed357d471baba13b445b57437e2129d1abb946eaf3121e740c"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "an authorized reviewer approves publication"
+        },
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "the publication reviewer must"
+        }
+      ],
+      "original_sha256": "e59cf553aba1ef6c3f57402c6a5186de41b55149745a688647f42fb1bd256224",
+      "public_path": "run/source/README.md",
+      "public_sha256": "4263eec810b7a72ae135f430a7c3ef7e93449fed2c9370e3bc71f2875407d223"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 2,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "3e14d9135824f05775f1c353f09376ae559be755440d7debb845f8ecaa81d82d",
+      "public_path": "run/source/SOURCE_PROVENANCE.json",
+      "public_sha256": "04179dcf80123e34464839c7f097ac1b751a21f6fa0c82ec58be6808ef3d2742"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 10,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "9f8d98d5e211d219d17a5cffc6b80ac4efaebb577709fd0a1195ceb93cf947da",
+      "public_path": "run/source/evidence/assessment-red.txt",
+      "public_sha256": "7254f0dc9f45697b30704c69bf53ada06835341fb0a140aed40b8e709c1d1640"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 7,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "d569602300ae272189e5a4c32e2365b1e20a18644250f1771d3e948c66189580",
+      "public_path": "run/source/evidence/gate-red.txt",
+      "public_sha256": "617fa157a7c5cdef54d49ef15430fe32930d84323f0459dcd1c4c406e6d8c906"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 4,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "a4f30577b880c630cd977f58bfe1e766cd00dbe5fded0291d6d2adf1bae2052d",
+      "public_path": "run/source/evidence/mutation-drop_retained_key.txt",
+      "public_sha256": "8d7e9f873f834e294bdc88b5cc808af277ac0c0d4f67322e8abfc3573d03b048"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 1,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "a953c1923b4a1f1b11074f890219cc733e756e8065fe2a855e312a8372f067e2",
+      "public_path": "run/source/evidence/mutation-ignore_payload_conflict.txt",
+      "public_sha256": "f1ba5653b247b05aa53650be014aa96f52a2a3c6421caee17509c61805467708"
+    },
+    {
+      "changes": [
+        {
+          "category": "temporary path",
+          "occurrences": 3,
+          "replacement": "<TEMP>"
+        }
+      ],
+      "original_sha256": "7119b82fd23bc636b970f39d401f014618eb063e26fd664ae8058aafb8ec682a",
+      "public_path": "run/source/evidence/mutation-move_postcommit_hook_early.txt",
+      "public_sha256": "7e723420d84491971e3d221a10e97d4eac76f5acbe483cee764e36f3603e8c21"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 8,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "07bb2324448ad97a7a19aaf83f44d8cfc301f1073f901fadd285a853f3b4dd9d",
+      "public_path": "run/source/evidence/synthetic-red.txt",
+      "public_sha256": "30dbfa79d238deaca0953567160bc769ef4c28a2d184eaf53ceef22a9ecd119b"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 1,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "044b53f65dcae523245e03d42ec83bb943dabb4ddef1d0a40b4071dd98a73e6f",
+      "public_path": "execution/supervise_once.py",
+      "public_sha256": "b10ed91ab4e108e77eb4c5bcb92f2b9c2df5b0097447cda25d1ba7ecc0f4bf48"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 4,
+          "replacement": "<WORKSPACE>"
+        },
+        {
+          "category": "runtime executable path",
+          "occurrences": 1,
+          "replacement": "<PYTHON_EXECUTABLE>"
+        }
+      ],
+      "original_sha256": "a9a7db05bbf722bc6643d71804b30cb938f3d3e6e36f034192b9898120de73a8",
+      "public_path": "execution/supervisor-receipt.json",
+      "public_sha256": "3be54e5125dcf1d00a38408d455f67814c785904326ac2412f0f169967268fbc"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal reviewer identity",
+          "occurrences": 1,
+          "replacement": "independent-implementation-reviewer"
+        }
+      ],
+      "original_sha256": "8bf3e330af3bf0702e1c96ab926e1f46e2815c88e5bf8f4c7e96b1ecc95ff3b8",
+      "public_path": "review/admission.json",
+      "public_sha256": "af1d14f41bd5e9e6b26411026c7fc01d7e14407f3360bf23ed6537e4b0bee731"
+    },
+    {
+      "changes": [
+        {
+          "category": "workspace path",
+          "occurrences": 2,
+          "replacement": "<WORKSPACE>"
+        }
+      ],
+      "original_sha256": "3e14d9135824f05775f1c353f09376ae559be755440d7debb845f8ecaa81d82d",
+      "public_path": "source/SOURCE_PROVENANCE.json",
+      "public_sha256": "04179dcf80123e34464839c7f097ac1b751a21f6fa0c82ec58be6808ef3d2742"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "Authorized review decides execution and publication"
+        }
+      ],
+      "original_sha256": "f993e3e4ea4a7b3a47f2d967b0d17ba01f929bda2ad715d10127c3eb306331b2",
+      "public_path": "source/PROTOCOL.md",
+      "public_sha256": "4d0c41ac1cf721ed357d471baba13b445b57437e2129d1abb946eaf3121e740c"
+    },
+    {
+      "changes": [
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "an authorized reviewer approves publication"
+        },
+        {
+          "category": "internal routing role",
+          "occurrences": 1,
+          "replacement": "the publication reviewer must"
+        }
+      ],
+      "original_sha256": "e59cf553aba1ef6c3f57402c6a5186de41b55149745a688647f42fb1bd256224",
+      "public_path": "source/README.md",
+      "public_sha256": "4263eec810b7a72ae135f430a7c3ef7e93449fed2c9370e3bc71f2875407d223"
+    }
+  ],
+  "scope": "Post-data metadata-only publication derivative. Original strings are intentionally not republished. Original/public content hashes identify each change."
+}

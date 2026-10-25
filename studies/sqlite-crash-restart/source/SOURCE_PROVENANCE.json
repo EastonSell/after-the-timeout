@@ -1,0 +1,48 @@
+{
+  "derivative_scope": "Standalone SQLite contract derived from historical SQL logic; IPC/files replace HTTP and no endpoint is opened. Existing source/evidence never edited.",
+  "empirical_execution": "NOT RUN; PRE-DATA admission required.",
+  "excluded": "Prior unreviewed fresh-fixed-matrix remains outside denominator and claims. No outcome used for this protocol.",
+  "historical_roots": [
+    "<WORKSPACE>/timeout-overnight-20261025",
+    "<WORKSPACE>/timeout-overnight-evidence-20261025"
+  ],
+  "identity_limit": "Local published-tree reconstruction from parent plus the exact four reviewed paths, checked against the retained publication receipt. Not a new remote-head verification or external preregistration.",
+  "local_git_HEAD": "3f4bc85b786fe5106b857729ec76e8df7bdc5023",
+  "local_staged_paths": [
+    "README.md",
+    "studies/local-process-recovery/client-provenance/README.md",
+    "studies/local-process-recovery/client-provenance/test_client_provenance.py",
+    "studies/local-process-recovery/client-provenance/verify_client_run.py"
+  ],
+  "local_unstaged_tracked_paths": [],
+  "published_four_path_receipt_checks": [
+    {
+      "matches_published_receipt": true,
+      "path": "README.md",
+      "sha256": "960e34d1f26b1ee3826c322eb1bb19933a05585b6c293c430ac652a3e9626859"
+    },
+    {
+      "matches_published_receipt": true,
+      "path": "studies/local-process-recovery/client-provenance/README.md",
+      "sha256": "e171ccab4ec04280ecbbeecf8071dac6d7141ea76bfedf90170574b9fcd804e8"
+    },
+    {
+      "matches_published_receipt": true,
+      "path": "studies/local-process-recovery/client-provenance/verify_client_run.py",
+      "sha256": "105f3ca28d85fda447a03135fc8477d1649c453c5c20382946d1401449d8f37c"
+    },
+    {
+      "matches_published_receipt": true,
+      "path": "studies/local-process-recovery/client-provenance/test_client_provenance.py",
+      "sha256": "33ef621b59b51cc5285de1c579e6ee5f1260607ec58765749e56b87dbf50f105"
+    }
+  ],
+  "repository": "EastonSell/after-the-timeout",
+  "target_published_commit": "d11df2f7fc9cd950d472c98b5aba107fb461080a",
+  "upstream_source_hashes": {
+    "PROTOCOL.md": "c0058cc195c2e2b79e0cdb8fa9f6d1745c9296f3931a68b1f53ad8c7cb6f6d6b",
+    "README.md": "6a6e433610cb6862e8f90dc0d8c941b0ffc50cda801440aeba3a0e9c797e3b17",
+    "common.py": "f3e9d5cf7fb2f5387b659b4ace60bce7a6840f1b93640edf52ad8ac930d3271b",
+    "service.py": "51ec1b5c8fc780847f47b6a10c67ff74987135c0463ba132ee6fc66b1703fdf6"
+  }
+}

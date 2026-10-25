@@ -74,3 +74,7 @@ The [saved-trace policy-attribution supplement](studies/recovery-composition/pol
 ## Real-process evidence checks
 
 The [local-process recovery study](studies/local-process-recovery/README.md) uses actual loopback HTTP client/service processes and a file-backed SQLite database on one host. Its [client-provenance supplement](studies/local-process-recovery/client-provenance/README.md) adds post-hoc checks tying observed failures to declared requests, process identities, saved outcomes, and concurrent-recoverer receipts. It composes the existing whole-matrix verifier without changing the primary evidence; it does not establish distributed-system or provider guarantees.
+
+## Application crash/restart evidence
+
+The [SQLite crash/restart study](studies/sqlite-crash-restart/README.md) records 24 selected process-crash trials with complete denominators and independent raw-evidence review. After a committed write loses its reply, unkeyed recovery duplicates the effect in 4/4 trials; retaining the same key and payload preserves one effect in 4/4. A changed-payload control also shows why one effect can leave the original goal incomplete. These are local file-IPC/SIGKILL results at barriers outside the COMMIT call, not HTTP timeout or power-loss guarantees.

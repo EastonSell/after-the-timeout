@@ -1,0 +1,16 @@
+{
+  "admission_limit": "Original admission remains bound to original bytes. No new pre-data admission is claimed for the public derivative.",
+  "original_output_manifest_sha256": "5f979bc0546521e6040a751ef4265d1cbc80ba1e3c911e749f67c8c0b9c0293f",
+  "original_predata_freeze_sha256": "990faf455cece27c437546899533fb1e1c90a508c5429c13df45fbd20275cdaf",
+  "phase": "POST-DATA PUBLIC METADATA DERIVATIVE",
+  "private_backup": "Complete unredacted originals preserved separately; no private download link is published.",
+  "public_retained_archive_sha256": "48ddf3c1f946b7ac2253d068205cada80a75a7091553027f1edf89f82075018b",
+  "publication_changes": [
+    "Metadata-only portable path and neutral role-label replacements, individually recorded with original/public hashes.",
+    "Lossless relative-prefix packaging of public counterparts.",
+    "Post-data report, review summary, custody documentation and derivative auditor.",
+    "Small discovery entry appended to root README."
+  ],
+  "redacted_original_files": 22,
+  "scientific_changes": []
+}

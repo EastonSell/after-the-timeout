@@ -1,0 +1,525 @@
+{
+  "analysis": "All 24 planned rows retained. Valid/pass, valid/prediction-fail, invalid, and not-run are disjoint. No replacements or optional stopping on outcomes.",
+  "base_commit": "d11df2f7fc9cd950d472c98b5aba107fb461080a",
+  "bounds": {
+    "barrier_timeout_s": 4,
+    "max_live_workers": 1,
+    "output_abort_threshold_bytes": 33554432,
+    "planned_trials": 24,
+    "repetitions_per_cell": 4,
+    "run_timeout_s": 180,
+    "trial_timeout_s": 12,
+    "worker_address_space_bytes": 536870912,
+    "worker_barrier_watchdog_s": 10,
+    "worker_cpu_limit_s": 5,
+    "worker_file_limit_bytes": 1048576
+  },
+  "matrix": [
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-000",
+      "mode": "no_key",
+      "phase": "before_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-001",
+      "mode": "same_key",
+      "phase": "before_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 0,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-002",
+      "mode": "payload_conflict",
+      "phase": "before_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 2,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 2,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-003",
+      "mode": "no_key",
+      "phase": "after_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "deduplicated",
+        "recovery_status": 200
+      },
+      "id": "row-004",
+      "mode": "same_key",
+      "phase": "after_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "rejected",
+        "recovery_status": 409
+      },
+      "id": "row-005",
+      "mode": "payload_conflict",
+      "phase": "after_commit",
+      "repetition": 1
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-006",
+      "mode": "no_key",
+      "phase": "before_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-007",
+      "mode": "same_key",
+      "phase": "before_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 0,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-008",
+      "mode": "payload_conflict",
+      "phase": "before_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 2,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 2,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-009",
+      "mode": "no_key",
+      "phase": "after_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "deduplicated",
+        "recovery_status": 200
+      },
+      "id": "row-010",
+      "mode": "same_key",
+      "phase": "after_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "rejected",
+        "recovery_status": 409
+      },
+      "id": "row-011",
+      "mode": "payload_conflict",
+      "phase": "after_commit",
+      "repetition": 2
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-012",
+      "mode": "no_key",
+      "phase": "before_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-013",
+      "mode": "same_key",
+      "phase": "before_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 0,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-014",
+      "mode": "payload_conflict",
+      "phase": "before_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 2,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 2,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-015",
+      "mode": "no_key",
+      "phase": "after_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "deduplicated",
+        "recovery_status": 200
+      },
+      "id": "row-016",
+      "mode": "same_key",
+      "phase": "after_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "rejected",
+        "recovery_status": 409
+      },
+      "id": "row-017",
+      "mode": "payload_conflict",
+      "phase": "after_commit",
+      "repetition": 3
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-018",
+      "mode": "no_key",
+      "phase": "before_commit",
+      "repetition": 4
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-019",
+      "mode": "same_key",
+      "phase": "before_commit",
+      "repetition": 4
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 0,
+        "effects_final": 1,
+        "keys_before_recovery": 0,
+        "keys_final": 1,
+        "original_payload_count_final": 0,
+        "original_payload_survives": false,
+        "original_state_after_restart": "pending",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-020",
+      "mode": "payload_conflict",
+      "phase": "before_commit",
+      "repetition": 4
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 2,
+        "keys_before_recovery": 0,
+        "keys_final": 0,
+        "original_payload_count_final": 2,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "committed",
+        "recovery_status": 200
+      },
+      "id": "row-021",
+      "mode": "no_key",
+      "phase": "after_commit",
+      "repetition": 4
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 1
+        },
+        "recovery_state": "deduplicated",
+        "recovery_status": 200
+      },
+      "id": "row-022",
+      "mode": "same_key",
+      "phase": "after_commit",
+      "repetition": 4
+    },
+    {
+      "expected": {
+        "effects_before_recovery": 1,
+        "effects_final": 1,
+        "keys_before_recovery": 1,
+        "keys_final": 1,
+        "original_payload_count_final": 1,
+        "original_payload_survives": true,
+        "original_state_after_restart": "committed",
+        "recovery_payload": {
+          "item": "A",
+          "value": 2
+        },
+        "recovery_state": "rejected",
+        "recovery_status": 409
+      },
+      "id": "row-023",
+      "mode": "payload_conflict",
+      "phase": "after_commit",
+      "repetition": 4
+    }
+  ],
+  "stage": "PRE-DATA; NOT ADMITTED",
+  "study": "sqlite-crash-restart-v1"
+}
