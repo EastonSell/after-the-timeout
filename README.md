@@ -70,3 +70,7 @@ Original code, skills, documentation and synthetic results are [MIT licensed](LI
 [Complete scheduler-path evidence and bounded recovery analysis](studies/recovery-composition/README.md) retain the failed completion prediction P5 and show no composed-policy superiority: the adequate single-operation policy justifies 423 cases versus 417 for the composed policy. The six losses instantiate one structural defect, not six independent discoveries. Supplementary impossibility reasoning is limited to its declared action alphabet, and cache semantics are model-specific. These are offline contract-model results, not real API or agent-behavior guarantees.
 
 The [saved-trace policy-attribution supplement](studies/recovery-composition/policy-attribution/README.md) checks original per-row dynamics first, then whether the named policy selected each recorded action. It is post-hoc verification of retained evidence, not a new policy result or a whole-dataset completeness proof.
+
+## Real-process evidence checks
+
+The [local-process recovery study](studies/local-process-recovery/README.md) uses actual loopback HTTP client/service processes and a file-backed SQLite database on one host. Its [client-provenance supplement](studies/local-process-recovery/client-provenance/README.md) adds post-hoc checks tying observed failures to declared requests, process identities, saved outcomes, and concurrent-recoverer receipts. It composes the existing whole-matrix verifier without changing the primary evidence; it does not establish distributed-system or provider guarantees.
